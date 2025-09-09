@@ -1,0 +1,56 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "2107708093",
+    "Type": "Event",
+    "GUID": "{16A5B54C-8D78-4F8F-AE29-80D2D8738ACA}",
+    "Language": "SFX",
+    "Hash": "{C5EE98BD-B36E-F785-C4CB-F0D79DF45E5E}",
+    "ObjectPath": "EndHornEvent",
+    "ShortName": "EndHornEvent",
+    "Path": "Event/EndHornEvent.bnk",
+    "Media": [
+     {
+      "Id": "393847781",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Horn_End.wav",
+      "Path": "Media/393847781.wem",
+      "CachePath": "F4/{F4A9979F-2592-3D48-AF43-DC5ABE7F8980}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2107708093",
+      "Name": "EndHornEvent",
+      "ObjectPath": "\\Events\\Default Work Unit\\HornEvents\\EndHornEvent",
+      "GUID": "{16A5B54C-8D78-4F8F-AE29-80D2D8738ACA}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.08666245",
+      "DurationMax": "0.08666245",
+      "MediaRefs": [
+       {
+        "Id": "393847781"
+       }
+      ]
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "3159817032",
+      "Name": "Distance_To_Sound",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Distance_To_Sound",
+      "GUID": "{6EE7AE7D-4E3E-4144-A62E-C482236486F7}"
+     }
+    ]
+   }
+  ],
+  "FileHash": "{0AD09EF4-6126-0EA5-1400-0C7AE7A67D0F}"
+ }
+}

@@ -1,0 +1,6 @@
+Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	3400062578	Tunnel_Reverb			\Default Work Unit\Master Audio Bus\Tunnel_Reverb	
+
+Effect plug-ins	ID	Name	Type				Notes
+	2513915904	Hall_Large	Wwise RoomVerb			
+

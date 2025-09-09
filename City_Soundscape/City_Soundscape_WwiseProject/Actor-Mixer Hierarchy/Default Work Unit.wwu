@@ -1,0 +1,2645 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{53381628-9668-4F90-B385-3C40AC0DA961}" SchemaVersion="123">
+	<AudioObjects>
+		<WorkUnit Name="Default Work Unit" ID="{53381628-9668-4F90-B385-3C40AC0DA961}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Engine" ID="{EB8316DA-F662-4DAD-9165-2EB570692AC1}" ShortID="165824863">
+					<ChildrenList>
+						<Sound Name="CarStop" ID="{82D8A000-4B96-4F6E-A3DE-D9483B51A4C6}" ShortID="703956376">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7DBE265F-91B8-4B33-BD81-35FDE3C0D7C3}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6BC83C2-7FBB-45D2-846A-81A46DA893E6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Engine_Stop" ID="{D4CDD136-C003-4150-9AF6-4D05C3A80CB2}">
+									<Language>SFX</Language>
+									<AudioFile>Engine_Stop.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="65894989"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Engine_Stop" ID="{D4CDD136-C003-4150-9AF6-4D05C3A80CB2}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<RandomSequenceContainer Name="StartSequence" ID="{425C7CE0-FA97-4E84-A06E-D803B9A02509}" ShortID="299786199">
+							<PropertyList>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7DBE265F-91B8-4B33-BD81-35FDE3C0D7C3}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6BC83C2-7FBB-45D2-846A-81A46DA893E6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<SwitchContainer Name="EngineSwitchContainer" ID="{B078A4B6-86D8-4238-84FA-ACF471A74793}" ShortID="823760632">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7DBE265F-91B8-4B33-BD81-35FDE3C0D7C3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6BC83C2-7FBB-45D2-846A-81A46DA893E6}"/>
+										</Reference>
+										<Reference Name="SwitchGroupOrStateGroup">
+											<ObjectRef Name="Gear_Switch" ID="{04E34D36-D91D-4E43-A108-07A485E59232}" WorkUnitID="{05EC6AF0-66C8-4F40-AF2A-B75C0C2C09DD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<BlendContainer Name="FirstGearBlend" ID="{83680039-9531-4FCB-8132-4B7899940116}" ShortID="698491751">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7DBE265F-91B8-4B33-BD81-35FDE3C0D7C3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6BC83C2-7FBB-45D2-846A-81A46DA893E6}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="CarIdle" ID="{4083D836-BBE1-4933-8AC1-359DDB556D21}" ShortID="79145210">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<Custom>
+																<Attenuation Name="Attenuation (Custom)" ID="{EF9CE281-6507-4776-BDC5-ECCEAC9909B8}" ShortID="319912557">
+																	<PropertyList>
+																		<Property Name="RadiusMax" Type="Real64" Value="5000"/>
+																	</PropertyList>
+																	<CurveUsageInfoList>
+																		<VolumeDryUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																				<Curve Name="VolumeDry" ID="{3EFC9992-46B7-4AD9-806F-C6AF90E0D3CA}">
+																					<PropertyList>
+																						<Property Name="Flags" Type="int32" Value="3"/>
+																					</PropertyList>
+																					<PointList>
+																						<Point>
+																							<XPos>0</XPos>
+																							<YPos>0</YPos>
+																							<Flags>5</Flags>
+																						</Point>
+																						<Point>
+																							<XPos>5000</XPos>
+																							<YPos>-200</YPos>
+																							<Flags>37</Flags>
+																						</Point>
+																					</PointList>
+																				</Curve>
+																			</CurveUsageInfo>
+																		</VolumeDryUsage>
+																		<VolumeWetGameUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+																		</VolumeWetGameUsage>
+																		<VolumeWetUserUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+																		</VolumeWetUserUsage>
+																		<LowPassFilterUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																		</LowPassFilterUsage>
+																		<HighPassFilterUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																		</HighPassFilterUsage>
+																		<SpreadUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																				<Curve Name="Spread" ID="{B638AB84-D575-40DD-BEF7-C671BD445493}">
+																					<PropertyList>
+																						<Property Name="Flags" Type="int32" Value="1"/>
+																					</PropertyList>
+																					<PointList>
+																						<Point>
+																							<XPos>0</XPos>
+																							<YPos>100</YPos>
+																							<Flags>5</Flags>
+																						</Point>
+																						<Point>
+																							<XPos>100</XPos>
+																							<YPos>100</YPos>
+																							<Flags>0</Flags>
+																							<SegmentShape>Log1</SegmentShape>
+																						</Point>
+																						<Point>
+																							<XPos>500</XPos>
+																							<YPos>0</YPos>
+																							<Flags>0</Flags>
+																						</Point>
+																						<Point>
+																							<XPos>5000</XPos>
+																							<YPos>0</YPos>
+																							<Flags>37</Flags>
+																						</Point>
+																					</PointList>
+																				</Curve>
+																			</CurveUsageInfo>
+																		</SpreadUsage>
+																		<FocusUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																		</FocusUsage>
+																		<ObstructionVolumeUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																		</ObstructionVolumeUsage>
+																		<ObstructionLPFUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																		</ObstructionLPFUsage>
+																		<ObstructionHPFUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																		</ObstructionHPFUsage>
+																		<OcclusionVolumeUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																		</OcclusionVolumeUsage>
+																		<OcclusionLPFUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																		</OcclusionLPFUsage>
+																		<OcclusionHPFUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																		</OcclusionHPFUsage>
+																		<DiffractionVolumeUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																		</DiffractionVolumeUsage>
+																		<DiffractionLPFUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																		</DiffractionLPFUsage>
+																		<DiffractionHPFUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																		</DiffractionHPFUsage>
+																		<TransmissionVolumeUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																		</TransmissionVolumeUsage>
+																		<TransmissionLPFUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																		</TransmissionLPFUsage>
+																		<TransmissionHPFUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																		</TransmissionHPFUsage>
+																	</CurveUsageInfoList>
+																</Attenuation>
+															</Custom>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7DBE265F-91B8-4B33-BD81-35FDE3C0D7C3}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6BC83C2-7FBB-45D2-846A-81A46DA893E6}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Engine_Idle" ID="{2008D891-CE52-4AA3-AE9C-848FBC0ACD41}">
+															<PropertyList>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="1.11509157081455"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Engine_Idle.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="659041346"/>
+																<MediaID Platform="Windows" ID="98446465"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Engine_Idle" ID="{2008D891-CE52-4AA3-AE9C-848FBC0ACD41}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="CarMedium" ID="{DEB23237-E46B-4720-B791-F0153576E938}" ShortID="565601752">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<Custom>
+																<Attenuation Name="Attenuation (Custom)" ID="{3B8B5FF5-0F4C-41D2-8AFD-43C6492E15EB}" ShortID="841444547">
+																	<PropertyList>
+																		<Property Name="RadiusMax" Type="Real64" Value="5000"/>
+																	</PropertyList>
+																	<CurveUsageInfoList>
+																		<VolumeDryUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																				<Curve Name="VolumeDry" ID="{DF801448-867A-46A0-9B32-F7F60678EB10}">
+																					<PropertyList>
+																						<Property Name="Flags" Type="int32" Value="3"/>
+																					</PropertyList>
+																					<PointList>
+																						<Point>
+																							<XPos>0</XPos>
+																							<YPos>0</YPos>
+																							<Flags>5</Flags>
+																						</Point>
+																						<Point>
+																							<XPos>5000</XPos>
+																							<YPos>-200</YPos>
+																							<Flags>37</Flags>
+																						</Point>
+																					</PointList>
+																				</Curve>
+																			</CurveUsageInfo>
+																		</VolumeDryUsage>
+																		<VolumeWetGameUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+																		</VolumeWetGameUsage>
+																		<VolumeWetUserUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+																		</VolumeWetUserUsage>
+																		<LowPassFilterUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																		</LowPassFilterUsage>
+																		<HighPassFilterUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																		</HighPassFilterUsage>
+																		<SpreadUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																				<Curve Name="Spread" ID="{35086DFC-A92B-4AF9-8BE9-B4CE915842A6}">
+																					<PropertyList>
+																						<Property Name="Flags" Type="int32" Value="1"/>
+																					</PropertyList>
+																					<PointList>
+																						<Point>
+																							<XPos>0</XPos>
+																							<YPos>100</YPos>
+																							<Flags>5</Flags>
+																						</Point>
+																						<Point>
+																							<XPos>100</XPos>
+																							<YPos>100</YPos>
+																							<Flags>0</Flags>
+																							<SegmentShape>Log1</SegmentShape>
+																						</Point>
+																						<Point>
+																							<XPos>500</XPos>
+																							<YPos>0</YPos>
+																							<Flags>0</Flags>
+																						</Point>
+																						<Point>
+																							<XPos>5000</XPos>
+																							<YPos>0</YPos>
+																							<Flags>37</Flags>
+																						</Point>
+																					</PointList>
+																				</Curve>
+																			</CurveUsageInfo>
+																		</SpreadUsage>
+																		<FocusUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																		</FocusUsage>
+																		<ObstructionVolumeUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																		</ObstructionVolumeUsage>
+																		<ObstructionLPFUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																		</ObstructionLPFUsage>
+																		<ObstructionHPFUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																		</ObstructionHPFUsage>
+																		<OcclusionVolumeUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																		</OcclusionVolumeUsage>
+																		<OcclusionLPFUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																		</OcclusionLPFUsage>
+																		<OcclusionHPFUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																		</OcclusionHPFUsage>
+																		<DiffractionVolumeUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																		</DiffractionVolumeUsage>
+																		<DiffractionLPFUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																		</DiffractionLPFUsage>
+																		<DiffractionHPFUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																		</DiffractionHPFUsage>
+																		<TransmissionVolumeUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																		</TransmissionVolumeUsage>
+																		<TransmissionLPFUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																		</TransmissionLPFUsage>
+																		<TransmissionHPFUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+																		</TransmissionHPFUsage>
+																	</CurveUsageInfoList>
+																</Attenuation>
+															</Custom>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7DBE265F-91B8-4B33-BD81-35FDE3C0D7C3}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6BC83C2-7FBB-45D2-846A-81A46DA893E6}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Engine_Medium" ID="{184607B2-9F63-4890-B808-A6DF2EA107BF}">
+															<Language>SFX</Language>
+															<AudioFile>Engine_Medium.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="386557140"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Engine_Medium" ID="{184607B2-9F63-4890-B808-A6DF2EA107BF}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<BlendTrackList>
+												<BlendTrack Name="Neutral" ID="{554D90DB-B301-47AF-8E26-2A6DB1D11A76}" ShortID="567119951">
+													<PropertyList>
+														<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="LayerCrossFadeControlInput">
+															<ObjectRef Name="Car_RPM" ID="{E8A5DAA3-887D-40FC-89AF-30315129E2ED}" WorkUnitID="{8AA1A83F-AB51-4F7F-A3C5-104D06A5528C}"/>
+														</Reference>
+													</ReferenceList>
+													<ObjectLists>
+														<ObjectList Name="RTPC">
+															<Reference>
+																<Local>
+																	<RTPC Name="" ID="{29A97D04-1282-4899-B96B-CD0C89C7B88F}" ShortID="394816866">
+																		<PropertyList>
+																			<Property Name="PropertyName" Type="string" Value="Volume"/>
+																		</PropertyList>
+																		<ReferenceList>
+																			<Reference Name="ControlInput">
+																				<ObjectRef Name="Car_RPM" ID="{E8A5DAA3-887D-40FC-89AF-30315129E2ED}" WorkUnitID="{8AA1A83F-AB51-4F7F-A3C5-104D06A5528C}"/>
+																			</Reference>
+																			<Reference Name="Curve">
+																				<Custom>
+																					<Curve Name="" ID="{E6326716-86D5-4806-A424-149D9D85868E}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="3"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>0</YPos>
+																								<Flags>5</Flags>
+																								<SegmentShape>Exp1</SegmentShape>
+																							</Point>
+																							<Point>
+																								<XPos>5004.92264</XPos>
+																								<YPos>10</YPos>
+																								<Flags>0</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>7000</XPos>
+																								<YPos>10</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</Custom>
+																			</Reference>
+																		</ReferenceList>
+																	</RTPC>
+																</Local>
+															</Reference>
+															<Reference>
+																<Local>
+																	<RTPC Name="" ID="{199840EC-97F0-43C3-9593-E154A262B894}" ShortID="793344131">
+																		<PropertyList>
+																			<Property Name="PropertyName" Type="string" Value="Pitch"/>
+																		</PropertyList>
+																		<ReferenceList>
+																			<Reference Name="ControlInput">
+																				<ObjectRef Name="Car_RPM" ID="{E8A5DAA3-887D-40FC-89AF-30315129E2ED}" WorkUnitID="{8AA1A83F-AB51-4F7F-A3C5-104D06A5528C}"/>
+																			</Reference>
+																			<Reference Name="Curve">
+																				<Custom>
+																					<Curve Name="" ID="{DF04E181-67F5-4A04-8843-7C6D2FB3DBDF}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="65537"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>0</YPos>
+																								<Flags>5</Flags>
+																								<SegmentShape>Exp1</SegmentShape>
+																							</Point>
+																							<Point>
+																								<XPos>5016.17441</XPos>
+																								<YPos>200</YPos>
+																								<Flags>0</Flags>
+																								<SegmentShape>Log3</SegmentShape>
+																							</Point>
+																							<Point>
+																								<XPos>7000</XPos>
+																								<YPos>700</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</Custom>
+																			</Reference>
+																		</ReferenceList>
+																	</RTPC>
+																</Local>
+															</Reference>
+															<Reference>
+																<Local>
+																	<RTPC Name="" ID="{F15E4872-3B5B-434F-B0A4-3EB1F437F8C7}" ShortID="216715666">
+																		<PropertyList>
+																			<Property Name="PropertyName" Type="string" Value="Volume"/>
+																		</PropertyList>
+																		<ReferenceList>
+																			<Reference Name="ControlInput">
+																				<ObjectRef Name="Distance_To_Sound" ID="{6EE7AE7D-4E3E-4144-A62E-C482236486F7}" WorkUnitID="{8AA1A83F-AB51-4F7F-A3C5-104D06A5528C}"/>
+																			</Reference>
+																			<Reference Name="Curve">
+																				<Custom>
+																					<Curve Name="" ID="{9F2BF897-7E3D-4A13-9CE3-932DAFAC598A}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="3"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>-15</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>6000</XPos>
+																								<YPos>0</YPos>
+																								<Flags>0</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>100000</XPos>
+																								<YPos>0.11429</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</Custom>
+																			</Reference>
+																		</ReferenceList>
+																	</RTPC>
+																</Local>
+															</Reference>
+														</ObjectList>
+													</ObjectLists>
+													<BlendTrackAssocList>
+														<BlendTrackAssoc>
+															<ItemRef Name="CarIdle" ID="{4083D836-BBE1-4933-8AC1-359DDB556D21}"/>
+															<CrossfadingInfo>
+																<LeftEdgePos>0</LeftEdgePos>
+																<LeftFadingMode>Automatic</LeftFadingMode>
+																<RightEdgePos>6999.9995</RightEdgePos>
+																<RightFadingMode>Automatic</RightFadingMode>
+															</CrossfadingInfo>
+														</BlendTrackAssoc>
+														<BlendTrackAssoc>
+															<ItemRef Name="CarMedium" ID="{DEB23237-E46B-4720-B791-F0153576E938}"/>
+															<CrossfadingInfo>
+																<LeftEdgePos>0.0005</LeftEdgePos>
+																<LeftFadingMode>Automatic</LeftFadingMode>
+																<LeftFadingSegmentShape>InvertedSCurve</LeftFadingSegmentShape>
+																<RightEdgePos>7000</RightEdgePos>
+																<RightFadingMode>Automatic</RightFadingMode>
+															</CrossfadingInfo>
+														</BlendTrackAssoc>
+													</BlendTrackAssocList>
+												</BlendTrack>
+											</BlendTrackList>
+										</BlendContainer>
+										<BlendContainer Name="SecondGearBlend" ID="{4CBE7AC6-C72B-4710-8E1B-A76EB332386F}" ShortID="908562407">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7DBE265F-91B8-4B33-BD81-35FDE3C0D7C3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6BC83C2-7FBB-45D2-846A-81A46DA893E6}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="CarIdle" ID="{EDE0989C-FB15-411C-BC3C-C281A49BC388}" ShortID="288125681">
+													<PropertyList>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7DBE265F-91B8-4B33-BD81-35FDE3C0D7C3}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6BC83C2-7FBB-45D2-846A-81A46DA893E6}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Engine_Idle" ID="{C5FF10C2-6E43-4B9A-A191-AB4F0072F4D7}">
+															<PropertyList>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Engine_Idle.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="98446465"/>
+																<MediaID Platform="Windows" ID="488612822"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Engine_Idle" ID="{C5FF10C2-6E43-4B9A-A191-AB4F0072F4D7}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Drums" ID="{8A430C78-95B5-4DB5-B48C-06B3815257A1}" ShortID="186762606">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7DBE265F-91B8-4B33-BD81-35FDE3C0D7C3}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6BC83C2-7FBB-45D2-846A-81A46DA893E6}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Musical, Loop, Jazz, Blues, Smooth, Improvisation 04 SND96594" ID="{6059A2C8-3D03-4FCA-B027-A6804A5AC5EE}">
+															<Language>SFX</Language>
+															<AudioFile>Musical, Loop, Jazz, Blues, Smooth, Improvisation 04 SND96594.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="508097322"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Musical, Loop, Jazz, Blues, Smooth, Improvisation 04 SND96594" ID="{6059A2C8-3D03-4FCA-B027-A6804A5AC5EE}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<BlendTrackList>
+												<BlendTrack Name="Neutral" ID="{45C9AD0A-D9E8-419E-A8C4-AA479EF689A5}" ShortID="895235415">
+													<PropertyList>
+														<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="LayerCrossFadeControlInput">
+															<ObjectRef Name="Car_RPM" ID="{E8A5DAA3-887D-40FC-89AF-30315129E2ED}" WorkUnitID="{8AA1A83F-AB51-4F7F-A3C5-104D06A5528C}"/>
+														</Reference>
+													</ReferenceList>
+													<ObjectLists>
+														<ObjectList Name="RTPC">
+															<Reference>
+																<Local>
+																	<RTPC Name="" ID="{C3FFD90B-35A7-4752-8558-85D84C0E1480}" ShortID="93719967">
+																		<PropertyList>
+																			<Property Name="PropertyName" Type="string" Value="Pitch"/>
+																		</PropertyList>
+																		<ReferenceList>
+																			<Reference Name="ControlInput">
+																				<ObjectRef Name="Car_RPM" ID="{E8A5DAA3-887D-40FC-89AF-30315129E2ED}" WorkUnitID="{8AA1A83F-AB51-4F7F-A3C5-104D06A5528C}"/>
+																			</Reference>
+																			<Reference Name="Curve">
+																				<Custom>
+																					<Curve Name="" ID="{200BE555-0C92-4539-BB9E-E1475E4B7C7C}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="65537"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>0</YPos>
+																								<Flags>5</Flags>
+																								<SegmentShape>Exp1</SegmentShape>
+																							</Point>
+																							<Point>
+																								<XPos>5250</XPos>
+																								<YPos>662</YPos>
+																								<Flags>0</Flags>
+																								<SegmentShape>Exp1</SegmentShape>
+																							</Point>
+																							<Point>
+																								<XPos>6500</XPos>
+																								<YPos>1100</YPos>
+																								<Flags>0</Flags>
+																								<SegmentShape>Log1</SegmentShape>
+																							</Point>
+																							<Point>
+																								<XPos>7000</XPos>
+																								<YPos>1100</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</Custom>
+																			</Reference>
+																		</ReferenceList>
+																	</RTPC>
+																</Local>
+															</Reference>
+															<Reference>
+																<Local>
+																	<RTPC Name="" ID="{57B96F2F-152D-4140-AE6B-2CA8A565C313}" ShortID="959413519">
+																		<PropertyList>
+																			<Property Name="PropertyName" Type="string" Value="Volume"/>
+																		</PropertyList>
+																		<ReferenceList>
+																			<Reference Name="ControlInput">
+																				<ObjectRef Name="Car_RPM" ID="{E8A5DAA3-887D-40FC-89AF-30315129E2ED}" WorkUnitID="{8AA1A83F-AB51-4F7F-A3C5-104D06A5528C}"/>
+																			</Reference>
+																			<Reference Name="Curve">
+																				<Custom>
+																					<Curve Name="" ID="{ACB7290D-1C18-4E25-A6D6-18A9C4D21E40}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="3"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>0</YPos>
+																								<Flags>5</Flags>
+																								<SegmentShape>Exp1</SegmentShape>
+																							</Point>
+																							<Point>
+																								<XPos>5250</XPos>
+																								<YPos>10.36668</YPos>
+																								<Flags>0</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>6507.73558</XPos>
+																								<YPos>11</YPos>
+																								<Flags>0</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>7000</XPos>
+																								<YPos>11</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</Custom>
+																			</Reference>
+																		</ReferenceList>
+																	</RTPC>
+																</Local>
+															</Reference>
+														</ObjectList>
+													</ObjectLists>
+													<BlendTrackAssocList>
+														<BlendTrackAssoc>
+															<ItemRef Name="CarIdle" ID="{EDE0989C-FB15-411C-BC3C-C281A49BC388}"/>
+															<CrossfadingInfo>
+																<LeftEdgePos>0</LeftEdgePos>
+																<LeftFadingMode>Automatic</LeftFadingMode>
+																<RightEdgePos>3500.00025</RightEdgePos>
+																<RightFadingMode>Automatic</RightFadingMode>
+															</CrossfadingInfo>
+														</BlendTrackAssoc>
+														<BlendTrackAssoc>
+															<ItemRef Name="Drums" ID="{8A430C78-95B5-4DB5-B48C-06B3815257A1}"/>
+															<CrossfadingInfo>
+																<LeftEdgePos>0.0005</LeftEdgePos>
+																<LeftFadingMode>Automatic</LeftFadingMode>
+																<RightEdgePos>7000</RightEdgePos>
+																<RightFadingMode>Automatic</RightFadingMode>
+															</CrossfadingInfo>
+														</BlendTrackAssoc>
+													</BlendTrackAssocList>
+												</BlendTrack>
+											</BlendTrackList>
+										</BlendContainer>
+										<BlendContainer Name="ThirdGearBlend" ID="{BBD26D4C-83C5-47F0-8020-E7DEA210AF8F}" ShortID="94602375">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7DBE265F-91B8-4B33-BD81-35FDE3C0D7C3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6BC83C2-7FBB-45D2-846A-81A46DA893E6}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="CarIdle" ID="{535D0942-A496-429F-BE60-D2D32980308C}" ShortID="454872509">
+													<PropertyList>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7DBE265F-91B8-4B33-BD81-35FDE3C0D7C3}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6BC83C2-7FBB-45D2-846A-81A46DA893E6}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Engine_Idle" ID="{0EAFA578-F5A2-436E-A685-FC5B4448DC5D}">
+															<Language>SFX</Language>
+															<AudioFile>Engine_Idle.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="145403440"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Engine_Idle" ID="{0EAFA578-F5A2-436E-A685-FC5B4448DC5D}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<BlendTrackList>
+												<BlendTrack Name="Neutral" ID="{A2797285-DA2B-4360-86DE-F19BFA699A00}" ShortID="128979364">
+													<PropertyList>
+														<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="LayerCrossFadeControlInput">
+															<ObjectRef Name="Car_RPM" ID="{E8A5DAA3-887D-40FC-89AF-30315129E2ED}" WorkUnitID="{8AA1A83F-AB51-4F7F-A3C5-104D06A5528C}"/>
+														</Reference>
+													</ReferenceList>
+													<ObjectLists>
+														<ObjectList Name="RTPC">
+															<Reference>
+																<Local>
+																	<RTPC Name="" ID="{FC44E239-F375-4584-9681-F96A60AA1F6E}" ShortID="610893703">
+																		<PropertyList>
+																			<Property Name="PropertyName" Type="string" Value="Volume"/>
+																		</PropertyList>
+																		<ReferenceList>
+																			<Reference Name="ControlInput">
+																				<ObjectRef Name="Car_RPM" ID="{E8A5DAA3-887D-40FC-89AF-30315129E2ED}" WorkUnitID="{8AA1A83F-AB51-4F7F-A3C5-104D06A5528C}"/>
+																			</Reference>
+																			<Reference Name="Curve">
+																				<Custom>
+																					<Curve Name="" ID="{2BCE3185-9A08-4323-8751-A8FA564E269E}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="3"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>0</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>6300</XPos>
+																								<YPos>10</YPos>
+																								<Flags>0</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>7000</XPos>
+																								<YPos>11</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</Custom>
+																			</Reference>
+																		</ReferenceList>
+																	</RTPC>
+																</Local>
+															</Reference>
+															<Reference>
+																<Local>
+																	<RTPC Name="" ID="{1F7E295F-0CF2-4377-BDEA-98AEE0CFCF98}" ShortID="462857242">
+																		<PropertyList>
+																			<Property Name="PropertyName" Type="string" Value="Pitch"/>
+																		</PropertyList>
+																		<ReferenceList>
+																			<Reference Name="ControlInput">
+																				<ObjectRef Name="Car_RPM" ID="{E8A5DAA3-887D-40FC-89AF-30315129E2ED}" WorkUnitID="{8AA1A83F-AB51-4F7F-A3C5-104D06A5528C}"/>
+																			</Reference>
+																			<Reference Name="Curve">
+																				<Custom>
+																					<Curve Name="" ID="{FE817122-AC2B-4393-AB06-F8F35837CC7D}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="65537"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>0</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>5800</XPos>
+																								<YPos>600</YPos>
+																								<Flags>0</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>7000</XPos>
+																								<YPos>799</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</Custom>
+																			</Reference>
+																		</ReferenceList>
+																	</RTPC>
+																</Local>
+															</Reference>
+														</ObjectList>
+													</ObjectLists>
+													<BlendTrackAssocList>
+														<BlendTrackAssoc>
+															<ItemRef Name="CarIdle" ID="{535D0942-A496-429F-BE60-D2D32980308C}"/>
+															<CrossfadingInfo>
+																<LeftEdgePos>0</LeftEdgePos>
+																<LeftFadingMode>Automatic</LeftFadingMode>
+																<RightEdgePos>7000</RightEdgePos>
+																<RightFadingMode>Automatic</RightFadingMode>
+															</CrossfadingInfo>
+														</BlendTrackAssoc>
+													</BlendTrackAssocList>
+												</BlendTrack>
+											</BlendTrackList>
+										</BlendContainer>
+										<BlendContainer Name="FourthGearBlend" ID="{A7534FF2-747D-4964-AB65-7ABCE98FC579}" ShortID="411833170">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7DBE265F-91B8-4B33-BD81-35FDE3C0D7C3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6BC83C2-7FBB-45D2-846A-81A46DA893E6}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="CarIdle" ID="{8714244D-20AA-45C5-B849-F9084B367CA0}" ShortID="910449700">
+													<PropertyList>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7DBE265F-91B8-4B33-BD81-35FDE3C0D7C3}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6BC83C2-7FBB-45D2-846A-81A46DA893E6}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Engine_Idle" ID="{1CA8E88B-D6D9-404C-A2AB-390402215CE2}">
+															<Language>SFX</Language>
+															<AudioFile>Engine_Idle.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="145403440"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Engine_Idle" ID="{1CA8E88B-D6D9-404C-A2AB-390402215CE2}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<BlendTrackList>
+												<BlendTrack Name="Neutral" ID="{C319D030-0305-4AE5-87F8-8B0D16D6B47D}" ShortID="191508968">
+													<PropertyList>
+														<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="LayerCrossFadeControlInput">
+															<ObjectRef Name="Car_RPM" ID="{E8A5DAA3-887D-40FC-89AF-30315129E2ED}" WorkUnitID="{8AA1A83F-AB51-4F7F-A3C5-104D06A5528C}"/>
+														</Reference>
+													</ReferenceList>
+												</BlendTrack>
+											</BlendTrackList>
+										</BlendContainer>
+										<BlendContainer Name="FifthGearBlend" ID="{C1F8CA5A-F11C-4BCE-8CD4-B68C1359686D}" ShortID="681065099">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7DBE265F-91B8-4B33-BD81-35FDE3C0D7C3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6BC83C2-7FBB-45D2-846A-81A46DA893E6}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="CarIdle" ID="{071A019C-F78D-4DCC-BF8D-0ACA457768C6}" ShortID="34100036">
+													<PropertyList>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7DBE265F-91B8-4B33-BD81-35FDE3C0D7C3}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6BC83C2-7FBB-45D2-846A-81A46DA893E6}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Engine_Idle" ID="{8E11E773-CD90-4AA1-A3BA-5B57ECEC1E9A}">
+															<PropertyList>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.509362816298002"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Engine_Idle.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="488612822"/>
+																<MediaID Platform="Windows" ID="215008894"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Engine_Idle" ID="{8E11E773-CD90-4AA1-A3BA-5B57ECEC1E9A}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<BlendTrackList>
+												<BlendTrack Name="Neutral" ID="{E7177E0E-49DD-42F0-805A-33811BE2CC21}" ShortID="589159773">
+													<PropertyList>
+														<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="LayerCrossFadeControlInput">
+															<ObjectRef Name="Car_RPM" ID="{E8A5DAA3-887D-40FC-89AF-30315129E2ED}" WorkUnitID="{8AA1A83F-AB51-4F7F-A3C5-104D06A5528C}"/>
+														</Reference>
+													</ReferenceList>
+												</BlendTrack>
+											</BlendTrackList>
+										</BlendContainer>
+										<Sound Name="CarFast" ID="{571E1882-A290-4615-A074-72C6DABC9587}" ShortID="657261945">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7DBE265F-91B8-4B33-BD81-35FDE3C0D7C3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6BC83C2-7FBB-45D2-846A-81A46DA893E6}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Engine_Fast" ID="{DED060B9-EF4F-4FAF-9AA6-1073C08F89A9}">
+													<Language>SFX</Language>
+													<AudioFile>Engine_Fast.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="695618972"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Engine_Fast" ID="{DED060B9-EF4F-4FAF-9AA6-1073C08F89A9}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<BlendContainer Name="NeutralBlend" ID="{D19D314C-5EA8-4729-BCE9-DD6BB5CB8BB6}" ShortID="801133853">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7DBE265F-91B8-4B33-BD81-35FDE3C0D7C3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6BC83C2-7FBB-45D2-846A-81A46DA893E6}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="CarIdle" ID="{A01BD8C9-7702-4AB6-B878-2B4242689443}" ShortID="966871482">
+													<PropertyList>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7DBE265F-91B8-4B33-BD81-35FDE3C0D7C3}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6BC83C2-7FBB-45D2-846A-81A46DA893E6}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Engine_Idle" ID="{698A5157-4B87-490B-BFBD-D60842B7D023}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.1"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.1"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.5368959415033"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Engine_Idle.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="215008894"/>
+																<MediaID Platform="Windows" ID="659041346"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Engine_Idle" ID="{698A5157-4B87-490B-BFBD-D60842B7D023}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<BlendTrackList>
+												<BlendTrack Name="Neutral" ID="{0AC30BED-2203-409A-B6A2-0608014CF8F0}" ShortID="326039008">
+													<PropertyList>
+														<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="LayerCrossFadeControlInput">
+															<ObjectRef Name="Car_RPM" ID="{E8A5DAA3-887D-40FC-89AF-30315129E2ED}" WorkUnitID="{8AA1A83F-AB51-4F7F-A3C5-104D06A5528C}"/>
+														</Reference>
+													</ReferenceList>
+													<ObjectLists>
+														<ObjectList Name="RTPC">
+															<Reference>
+																<Local>
+																	<RTPC Name="" ID="{41FD2783-365E-407C-9865-9248C80F6FEA}" ShortID="670016618">
+																		<PropertyList>
+																			<Property Name="PropertyName" Type="string" Value="Volume"/>
+																		</PropertyList>
+																		<ReferenceList>
+																			<Reference Name="ControlInput">
+																				<ObjectRef Name="Car_RPM" ID="{E8A5DAA3-887D-40FC-89AF-30315129E2ED}" WorkUnitID="{8AA1A83F-AB51-4F7F-A3C5-104D06A5528C}"/>
+																			</Reference>
+																			<Reference Name="Curve">
+																				<Custom>
+																					<Curve Name="" ID="{C49940F2-AA4B-4BBB-AB3A-D7BEDF56AB16}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="3"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>0</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>900</XPos>
+																								<YPos>0</YPos>
+																								<Flags>0</Flags>
+																								<SegmentShape>Exp1</SegmentShape>
+																							</Point>
+																							<Point>
+																								<XPos>3900</XPos>
+																								<YPos>10</YPos>
+																								<Flags>0</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>7000</XPos>
+																								<YPos>5</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</Custom>
+																			</Reference>
+																		</ReferenceList>
+																	</RTPC>
+																</Local>
+															</Reference>
+															<Reference>
+																<Local>
+																	<RTPC Name="" ID="{E04E8556-D5C1-4468-AAC3-11597CF225DE}" ShortID="854126831">
+																		<PropertyList>
+																			<Property Name="PropertyName" Type="string" Value="Pitch"/>
+																		</PropertyList>
+																		<ReferenceList>
+																			<Reference Name="ControlInput">
+																				<ObjectRef Name="Car_RPM" ID="{E8A5DAA3-887D-40FC-89AF-30315129E2ED}" WorkUnitID="{8AA1A83F-AB51-4F7F-A3C5-104D06A5528C}"/>
+																			</Reference>
+																			<Reference Name="Curve">
+																				<Custom>
+																					<Curve Name="" ID="{902773FA-25F0-48BA-A36B-A9E1D1DFA544}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="65537"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>0</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>900</XPos>
+																								<YPos>0</YPos>
+																								<Flags>0</Flags>
+																								<SegmentShape>Exp1</SegmentShape>
+																							</Point>
+																							<Point>
+																								<XPos>3900</XPos>
+																								<YPos>500</YPos>
+																								<Flags>0</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>7000</XPos>
+																								<YPos>150</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</Custom>
+																			</Reference>
+																		</ReferenceList>
+																	</RTPC>
+																</Local>
+															</Reference>
+														</ObjectList>
+													</ObjectLists>
+													<BlendTrackAssocList>
+														<BlendTrackAssoc>
+															<ItemRef Name="CarIdle" ID="{A01BD8C9-7702-4AB6-B878-2B4242689443}"/>
+															<CrossfadingInfo>
+																<LeftEdgePos>0</LeftEdgePos>
+																<LeftFadingMode>Automatic</LeftFadingMode>
+																<RightEdgePos>7000</RightEdgePos>
+																<RightFadingMode>Automatic</RightFadingMode>
+															</CrossfadingInfo>
+														</BlendTrackAssoc>
+													</BlendTrackAssocList>
+												</BlendTrack>
+											</BlendTrackList>
+										</BlendContainer>
+									</ChildrenList>
+									<GroupingInfo>
+										<GroupingBehaviorList>
+											<GroupingBehavior>
+												<ItemRef Name="FirstGearBlend" ID="{83680039-9531-4FCB-8132-4B7899940116}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="NeutralBlend" ID="{D19D314C-5EA8-4729-BCE9-DD6BB5CB8BB6}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="ThirdGearBlend" ID="{BBD26D4C-83C5-47F0-8020-E7DEA210AF8F}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="FifthGearBlend" ID="{C1F8CA5A-F11C-4BCE-8CD4-B68C1359686D}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="CarFast" ID="{571E1882-A290-4615-A074-72C6DABC9587}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="SecondGearBlend" ID="{4CBE7AC6-C72B-4710-8E1B-A76EB332386F}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="FourthGearBlend" ID="{A7534FF2-747D-4964-AB65-7ABCE98FC579}"/>
+											</GroupingBehavior>
+										</GroupingBehaviorList>
+										<GroupingList>
+											<Grouping>
+												<SwitchRef Name="Fifth" ID="{771E803F-0BE1-44E6-AC72-56F0E175DEFA}"/>
+												<ItemList>
+													<ItemRef Name="FirstGearBlend" ID="{83680039-9531-4FCB-8132-4B7899940116}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Second" ID="{A5578E5C-41E1-4EDC-869C-84DE3BC1FA99}"/>
+												<ItemList>
+													<ItemRef Name="FirstGearBlend" ID="{83680039-9531-4FCB-8132-4B7899940116}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="First" ID="{0685A7B3-DE85-47CC-BED3-3CA56E11C574}"/>
+												<ItemList>
+													<ItemRef Name="FirstGearBlend" ID="{83680039-9531-4FCB-8132-4B7899940116}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Third" ID="{794978BB-B840-4A4C-9483-E261B8A35562}"/>
+												<ItemList>
+													<ItemRef Name="FirstGearBlend" ID="{83680039-9531-4FCB-8132-4B7899940116}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Neutral" ID="{74B11EC2-2402-4C8A-A3F9-938048A2C007}"/>
+												<ItemList>
+													<ItemRef Name="FirstGearBlend" ID="{83680039-9531-4FCB-8132-4B7899940116}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Fourth" ID="{4C1B05FB-1283-48E7-A28B-D1F80419816F}"/>
+												<ItemList>
+													<ItemRef Name="FirstGearBlend" ID="{83680039-9531-4FCB-8132-4B7899940116}"/>
+												</ItemList>
+											</Grouping>
+										</GroupingList>
+									</GroupingInfo>
+								</SwitchContainer>
+								<Sound Name="CarStart" ID="{ACC2D0C8-C404-49A3-A7B5-90FD53E52879}" ShortID="676603404">
+									<PropertyList>
+										<Property Name="OverrideConversion" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="PCMSettings" ID="{EE2FD335-F2BD-422E-B3CF-4AC6756D7B11}" WorkUnitID="{7DBE265F-91B8-4B33-BD81-35FDE3C0D7C3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6BC83C2-7FBB-45D2-846A-81A46DA893E6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Engine_Start" ID="{F80E00B4-2705-418A-8A32-4699EF4CF351}">
+											<Language>SFX</Language>
+											<AudioFile>Engine_Start.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="4172513"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Engine_Start" ID="{F80E00B4-2705-418A-8A32-4699EF4CF351}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="CarStart2" ID="{D539E83D-3D92-458F-AA07-E87C13126CE8}" ShortID="221380480">
+									<PropertyList>
+										<Property Name="OverrideConversion" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>9</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="PCMSettings" ID="{EE2FD335-F2BD-422E-B3CF-4AC6756D7B11}" WorkUnitID="{7DBE265F-91B8-4B33-BD81-35FDE3C0D7C3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6BC83C2-7FBB-45D2-846A-81A46DA893E6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Engine_Start_2" ID="{62FBC4B1-DAD2-4365-8FC0-906D1BE7DE65}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.001"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="6.32448101313446"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Engine_Start_2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="745671645"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Engine_Start_2" ID="{62FBC4B1-DAD2-4365-8FC0-906D1BE7DE65}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Playlist">
+									<Reference>
+										<ObjectRef Name="CarStart2" ID="{D539E83D-3D92-458F-AA07-E87C13126CE8}" WorkUnitID="{53381628-9668-4F90-B385-3C40AC0DA961}"/>
+									</Reference>
+									<Reference>
+										<ObjectRef Name="EngineSwitchContainer" ID="{B078A4B6-86D8-4238-84FA-ACF471A74793}" WorkUnitID="{53381628-9668-4F90-B385-3C40AC0DA961}"/>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</RandomSequenceContainer>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Tyres" ID="{390FFF78-CDE9-4097-AE4C-E24938749C11}" ShortID="985407735">
+					<ChildrenList>
+						<SwitchContainer Name="TyreMaterialBlendContainer" ID="{BA4E349E-9139-4F0B-8C9F-55651C6EF28A}" ShortID="1014038979">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7DBE265F-91B8-4B33-BD81-35FDE3C0D7C3}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6BC83C2-7FBB-45D2-846A-81A46DA893E6}"/>
+								</Reference>
+								<Reference Name="SwitchGroupOrStateGroup">
+									<ObjectRef Name="TireMaterial" ID="{A7A11B4E-4E38-4299-AC6C-DE7422CE421A}" WorkUnitID="{05EC6AF0-66C8-4F40-AF2A-B75C0C2C09DD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<BlendContainer Name="GravelBlend" ID="{B8A18992-5777-4101-86E1-E4B12B88CD00}" ShortID="622462214">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7DBE265F-91B8-4B33-BD81-35FDE3C0D7C3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6BC83C2-7FBB-45D2-846A-81A46DA893E6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="GravelTyre" ID="{55B61E36-0209-410E-813A-1E9EE647B108}" ShortID="274464861">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="OutputBusVolume" Type="Real64">
+													<ValueList>
+														<Value>-23</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-10</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7DBE265F-91B8-4B33-BD81-35FDE3C0D7C3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6BC83C2-7FBB-45D2-846A-81A46DA893E6}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="GravelTyre2" ID="{A02A779C-A478-4642-83DC-1764CE9ADCCF}">
+													<PropertyList>
+														<Property Name="CrossfadeDuration" Type="Real64" Value="3139.346"/>
+														<Property Name="LoopBegin" Type="Real64" Value="1.809"/>
+														<Property Name="LoopEnd" Type="Real64" Value="8.03418"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>GravelTyre2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="79100417"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="GravelTyre2" ID="{A02A779C-A478-4642-83DC-1764CE9ADCCF}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<BlendTrackList>
+										<BlendTrack Name="Gravel Blend Track" ID="{082D618E-1D4F-4EA4-A88C-3B8E93D21877}" ShortID="436352008">
+											<PropertyList>
+												<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="LayerCrossFadeControlInput">
+													<ObjectRef Name="Car_Speed" ID="{13CBBC31-7B77-426C-894D-8DDB59F5ECAF}" WorkUnitID="{8AA1A83F-AB51-4F7F-A3C5-104D06A5528C}"/>
+												</Reference>
+											</ReferenceList>
+											<ObjectLists>
+												<ObjectList Name="RTPC">
+													<Reference>
+														<Local>
+															<RTPC Name="" ID="{34AC5D64-75EB-4E76-80F8-C54E2B37A7C8}" ShortID="656172995">
+																<PropertyList>
+																	<Property Name="PropertyName" Type="string" Value="Pitch"/>
+																</PropertyList>
+																<ReferenceList>
+																	<Reference Name="ControlInput">
+																		<ObjectRef Name="Car_Speed" ID="{13CBBC31-7B77-426C-894D-8DDB59F5ECAF}" WorkUnitID="{8AA1A83F-AB51-4F7F-A3C5-104D06A5528C}"/>
+																	</Reference>
+																	<Reference Name="Curve">
+																		<Custom>
+																			<Curve Name="" ID="{62AAFB95-F0BD-4897-8FEB-0C0205E23D84}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="65537"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>100</XPos>
+																						<YPos>600</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</Custom>
+																	</Reference>
+																</ReferenceList>
+															</RTPC>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<RTPC Name="" ID="{184FC381-0512-45AB-B2DB-031B2CDEF9C0}" ShortID="92411956">
+																<PropertyList>
+																	<Property Name="PropertyName" Type="string" Value="Volume"/>
+																</PropertyList>
+																<ReferenceList>
+																	<Reference Name="ControlInput">
+																		<ObjectRef Name="Car_Speed" ID="{13CBBC31-7B77-426C-894D-8DDB59F5ECAF}" WorkUnitID="{8AA1A83F-AB51-4F7F-A3C5-104D06A5528C}"/>
+																	</Reference>
+																	<Reference Name="Curve">
+																		<Custom>
+																			<Curve Name="" ID="{D7DEA565-8B4D-47D1-A954-44A9650B515C}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>-50</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>1.5</XPos>
+																						<YPos>-13.19897</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>100</XPos>
+																						<YPos>2</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</Custom>
+																	</Reference>
+																</ReferenceList>
+															</RTPC>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+											<BlendTrackAssocList>
+												<BlendTrackAssoc>
+													<ItemRef Name="GravelTyre" ID="{55B61E36-0209-410E-813A-1E9EE647B108}"/>
+													<CrossfadingInfo>
+														<LeftEdgePos>0</LeftEdgePos>
+														<LeftFadingMode>Automatic</LeftFadingMode>
+														<RightEdgePos>100</RightEdgePos>
+														<RightFadingMode>Automatic</RightFadingMode>
+													</CrossfadingInfo>
+												</BlendTrackAssoc>
+											</BlendTrackAssocList>
+										</BlendTrack>
+									</BlendTrackList>
+								</BlendContainer>
+								<BlendContainer Name="TarmacBlend" ID="{37ED381B-7EA6-487C-9B73-32094DD96297}" ShortID="532705316">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7DBE265F-91B8-4B33-BD81-35FDE3C0D7C3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6BC83C2-7FBB-45D2-846A-81A46DA893E6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="TarmacTyre" ID="{CDDA3DB2-475A-466E-86D0-DC173BD5E237}" ShortID="788008443">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7DBE265F-91B8-4B33-BD81-35FDE3C0D7C3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6BC83C2-7FBB-45D2-846A-81A46DA893E6}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="TarmacTyre" ID="{1ADA7384-9583-471F-951B-CF46D41A93D4}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="2.2"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.8"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>TarmacTyre.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="489887613"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="TarmacTyre" ID="{1ADA7384-9583-471F-951B-CF46D41A93D4}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<BlendTrackList>
+										<BlendTrack Name="Tarmac Blend Track" ID="{1CA7FCE1-28C7-42B5-BD28-9FF9DAC4346A}" ShortID="851580366">
+											<PropertyList>
+												<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="LayerCrossFadeControlInput">
+													<ObjectRef Name="Car_Speed" ID="{13CBBC31-7B77-426C-894D-8DDB59F5ECAF}" WorkUnitID="{8AA1A83F-AB51-4F7F-A3C5-104D06A5528C}"/>
+												</Reference>
+											</ReferenceList>
+											<ObjectLists>
+												<ObjectList Name="RTPC">
+													<Reference>
+														<Local>
+															<RTPC Name="" ID="{66D8D0CA-E4C8-4451-900D-8E3F730DDD44}" ShortID="853342356">
+																<PropertyList>
+																	<Property Name="PropertyName" Type="string" Value="Volume"/>
+																</PropertyList>
+																<ReferenceList>
+																	<Reference Name="ControlInput">
+																		<ObjectRef Name="Car_Speed" ID="{13CBBC31-7B77-426C-894D-8DDB59F5ECAF}" WorkUnitID="{8AA1A83F-AB51-4F7F-A3C5-104D06A5528C}"/>
+																	</Reference>
+																	<Reference Name="Curve">
+																		<Custom>
+																			<Curve Name="" ID="{6EDB71F4-2AB7-49F9-84C3-6B65894AD232}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>-50</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>1.5</XPos>
+																						<YPos>-13.19897</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>100</XPos>
+																						<YPos>1</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</Custom>
+																	</Reference>
+																</ReferenceList>
+															</RTPC>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+											<BlendTrackAssocList>
+												<BlendTrackAssoc>
+													<ItemRef Name="TarmacTyre" ID="{CDDA3DB2-475A-466E-86D0-DC173BD5E237}"/>
+													<CrossfadingInfo>
+														<LeftEdgePos>0</LeftEdgePos>
+														<LeftFadingMode>Automatic</LeftFadingMode>
+														<RightEdgePos>100</RightEdgePos>
+														<RightFadingMode>Automatic</RightFadingMode>
+													</CrossfadingInfo>
+												</BlendTrackAssoc>
+											</BlendTrackAssocList>
+										</BlendTrack>
+									</BlendTrackList>
+								</BlendContainer>
+							</ChildrenList>
+							<GroupingInfo>
+								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="TarmacBlend" ID="{37ED381B-7EA6-487C-9B73-32094DD96297}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="GravelBlend" ID="{B8A18992-5777-4101-86E1-E4B12B88CD00}"/>
+									</GroupingBehavior>
+								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="Gravel" ID="{5E3A0F30-9D9D-4BFB-BC89-CAD8B164896F}"/>
+										<ItemList>
+											<ItemRef Name="GravelBlend" ID="{B8A18992-5777-4101-86E1-E4B12B88CD00}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Tarmac" ID="{14AA17D1-EFC8-45DB-936E-066E6BA60C87}"/>
+										<ItemList>
+											<ItemRef Name="TarmacBlend" ID="{37ED381B-7EA6-487C-9B73-32094DD96297}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
+							</GroupingInfo>
+						</SwitchContainer>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Ambience" ID="{1EF33323-0602-47A6-A8CA-F780F7899C98}" ShortID="403777878">
+					<ChildrenList>
+						<Sound Name="City_Ambience" ID="{969A144B-E2B6-46A2-995D-6A59E7F577EC}" ShortID="1005265179">
+							<PropertyList>
+								<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-25</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7DBE265F-91B8-4B33-BD81-35FDE3C0D7C3}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6BC83C2-7FBB-45D2-846A-81A46DA893E6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="City_Ambience" ID="{E7B65814-B9AF-4C22-8BE4-626D1493A5A0}">
+									<Language>SFX</Language>
+									<AudioFile>City_Ambience.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="571883099"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{CECCEE80-BC57-4194-BB54-831750E5925A}" ShortID="683409586">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Volume"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="Distance_To_Sound" ID="{6EE7AE7D-4E3E-4144-A62E-C482236486F7}" WorkUnitID="{8AA1A83F-AB51-4F7F-A3C5-104D06A5528C}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{BFBCA8B3-35B4-4FDF-B3DA-25567626629F}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>5</Flags>
+																		<SegmentShape>Exp1</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>6000</XPos>
+																		<YPos>-0.01434</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100000</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+							<ActiveSourceList>
+								<ActiveSource Name="City_Ambience" ID="{E7B65814-B9AF-4C22-8BE4-626D1493A5A0}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="ConstructionSite_Ambience" ID="{D4F6F19D-2201-4EA0-8E59-1621B6784CB0}" ShortID="392595813">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<Custom>
+										<Attenuation Name="Attenuation (Custom)" ID="{DE55C734-BCBA-44E9-9236-E611265E3DD4}" ShortID="705183777">
+											<PropertyList>
+												<Property Name="RadiusMax" Type="Real64" Value="5000"/>
+											</PropertyList>
+											<CurveUsageInfoList>
+												<VolumeDryUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+														<Curve Name="VolumeDry" ID="{09C80F3B-FCD1-49E6-BF71-99A0EF9A259B}">
+															<PropertyList>
+																<Property Name="Flags" Type="int32" Value="3"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>0</YPos>
+																	<Flags>5</Flags>
+																</Point>
+																<Point>
+																	<XPos>5000</XPos>
+																	<YPos>-200</YPos>
+																	<Flags>37</Flags>
+																</Point>
+															</PointList>
+														</Curve>
+													</CurveUsageInfo>
+												</VolumeDryUsage>
+												<VolumeWetGameUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+												</VolumeWetGameUsage>
+												<VolumeWetUserUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+												</VolumeWetUserUsage>
+												<LowPassFilterUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</LowPassFilterUsage>
+												<HighPassFilterUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</HighPassFilterUsage>
+												<SpreadUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None">
+														<Curve Name="Spread" ID="{BF151B1F-9B89-45F1-B481-CFA53EECA762}">
+															<PropertyList>
+																<Property Name="Flags" Type="int32" Value="1"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>100</YPos>
+																	<Flags>5</Flags>
+																</Point>
+																<Point>
+																	<XPos>480.480483333333</XPos>
+																	<YPos>100</YPos>
+																	<Flags>0</Flags>
+																	<SegmentShape>Log3</SegmentShape>
+																</Point>
+																<Point>
+																	<XPos>892.320883333333</XPos>
+																	<YPos>0.24845</YPos>
+																	<Flags>0</Flags>
+																</Point>
+																<Point>
+																	<XPos>5000</XPos>
+																	<YPos>0</YPos>
+																	<Flags>37</Flags>
+																</Point>
+															</PointList>
+														</Curve>
+													</CurveUsageInfo>
+												</SpreadUsage>
+												<FocusUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</FocusUsage>
+												<ObstructionVolumeUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+												</ObstructionVolumeUsage>
+												<ObstructionLPFUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+												</ObstructionLPFUsage>
+												<ObstructionHPFUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+												</ObstructionHPFUsage>
+												<OcclusionVolumeUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+												</OcclusionVolumeUsage>
+												<OcclusionLPFUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+												</OcclusionLPFUsage>
+												<OcclusionHPFUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+												</OcclusionHPFUsage>
+												<DiffractionVolumeUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+												</DiffractionVolumeUsage>
+												<DiffractionLPFUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+												</DiffractionLPFUsage>
+												<DiffractionHPFUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+												</DiffractionHPFUsage>
+												<TransmissionVolumeUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+												</TransmissionVolumeUsage>
+												<TransmissionLPFUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+												</TransmissionLPFUsage>
+												<TransmissionHPFUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+												</TransmissionHPFUsage>
+											</CurveUsageInfoList>
+										</Attenuation>
+									</Custom>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7DBE265F-91B8-4B33-BD81-35FDE3C0D7C3}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6BC83C2-7FBB-45D2-846A-81A46DA893E6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Construction_Site_Ambience" ID="{CCF71254-776D-480D-A76C-F5BD0691CA4E}">
+									<PropertyList>
+										<Property Name="CrossfadeDuration" Type="Real64" Value="5299.183"/>
+										<Property Name="LoopBegin" Type="Real64" Value="3.346"/>
+										<Property Name="LoopEnd" Type="Real64" Value="102.637"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Construction_Site_Ambience.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="511193557"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Construction_Site_Ambience" ID="{CCF71254-776D-480D-A76C-F5BD0691CA4E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Siren_Ambience" ID="{465FD2B6-7E44-4B64-A5CA-DDAE3BD4257F}" ShortID="60549507">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<Custom>
+										<Attenuation Name="Attenuation (Custom)" ID="{298F92FD-3CA5-4D75-AEC6-F15662AB9388}" ShortID="171114511">
+											<PropertyList>
+												<Property Name="RadiusMax" Type="Real64" Value="5000"/>
+											</PropertyList>
+											<CurveUsageInfoList>
+												<VolumeDryUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+														<Curve Name="VolumeDry" ID="{739F83B0-2574-4368-908E-81CDC38C5095}">
+															<PropertyList>
+																<Property Name="Flags" Type="int32" Value="3"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>0</YPos>
+																	<Flags>5</Flags>
+																</Point>
+																<Point>
+																	<XPos>5000</XPos>
+																	<YPos>-200</YPos>
+																	<Flags>37</Flags>
+																</Point>
+															</PointList>
+														</Curve>
+													</CurveUsageInfo>
+												</VolumeDryUsage>
+												<VolumeWetGameUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+												</VolumeWetGameUsage>
+												<VolumeWetUserUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+												</VolumeWetUserUsage>
+												<LowPassFilterUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</LowPassFilterUsage>
+												<HighPassFilterUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</HighPassFilterUsage>
+												<SpreadUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+														<Curve Name="Spread" ID="{3B6612EF-D8ED-404C-AE89-319700106037}">
+															<PropertyList>
+																<Property Name="Flags" Type="int32" Value="1"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>100</YPos>
+																	<Flags>5</Flags>
+																</Point>
+																<Point>
+																	<XPos>817.2458125</XPos>
+																	<YPos>100</YPos>
+																	<Flags>0</Flags>
+																	<SegmentShape>Log1</SegmentShape>
+																</Point>
+																<Point>
+																	<XPos>1093.9511</XPos>
+																	<YPos>0</YPos>
+																	<Flags>0</Flags>
+																</Point>
+																<Point>
+																	<XPos>5000</XPos>
+																	<YPos>0</YPos>
+																	<Flags>37</Flags>
+																</Point>
+															</PointList>
+														</Curve>
+													</CurveUsageInfo>
+												</SpreadUsage>
+												<FocusUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</FocusUsage>
+												<ObstructionVolumeUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+												</ObstructionVolumeUsage>
+												<ObstructionLPFUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+												</ObstructionLPFUsage>
+												<ObstructionHPFUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+												</ObstructionHPFUsage>
+												<OcclusionVolumeUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+												</OcclusionVolumeUsage>
+												<OcclusionLPFUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+												</OcclusionLPFUsage>
+												<OcclusionHPFUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+												</OcclusionHPFUsage>
+												<DiffractionVolumeUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+												</DiffractionVolumeUsage>
+												<DiffractionLPFUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+												</DiffractionLPFUsage>
+												<DiffractionHPFUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+												</DiffractionHPFUsage>
+												<TransmissionVolumeUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+												</TransmissionVolumeUsage>
+												<TransmissionLPFUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+												</TransmissionLPFUsage>
+												<TransmissionHPFUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+												</TransmissionHPFUsage>
+											</CurveUsageInfoList>
+										</Attenuation>
+									</Custom>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7DBE265F-91B8-4B33-BD81-35FDE3C0D7C3}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6BC83C2-7FBB-45D2-846A-81A46DA893E6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Vehicles, Siren, Ambulance, Siren Wailing, Clean, Long, Close Up SND39712" ID="{DC9CBCA9-A0D0-440A-A1A6-8DE81C1E966D}">
+									<PropertyList>
+										<Property Name="CrossfadeDuration" Type="Real64" Value="7779.687"/>
+										<Property Name="LoopBegin" Type="Real64" Value="3.191"/>
+										<Property Name="LoopEnd" Type="Real64" Value="63.434"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Vehicles, Siren, Ambulance, Siren Wailing, Clean, Long, Close Up SND39712.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="92163103"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Vehicles, Siren, Ambulance, Siren Wailing, Clean, Long, Close Up SND39712" ID="{DC9CBCA9-A0D0-440A-A1A6-8DE81C1E966D}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Music_Loop" ID="{A88A7EE8-09C5-49B7-B83D-CBB26A06A9CD}" ShortID="669685060">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<Custom>
+										<Attenuation Name="Attenuation (Custom)" ID="{4850F132-B16C-4B05-9F77-5D71C85585C2}" ShortID="309810925">
+											<PropertyList>
+												<Property Name="RadiusMax" Type="Real64" Value="5000"/>
+											</PropertyList>
+											<CurveUsageInfoList>
+												<VolumeDryUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+														<Curve Name="VolumeDry" ID="{EB068C30-BE1A-4431-BF26-CDBE73F2B3FD}">
+															<PropertyList>
+																<Property Name="Flags" Type="int32" Value="3"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>0</YPos>
+																	<Flags>5</Flags>
+																</Point>
+																<Point>
+																	<XPos>5000</XPos>
+																	<YPos>-200</YPos>
+																	<Flags>37</Flags>
+																</Point>
+															</PointList>
+														</Curve>
+													</CurveUsageInfo>
+												</VolumeDryUsage>
+												<VolumeWetGameUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+												</VolumeWetGameUsage>
+												<VolumeWetUserUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+												</VolumeWetUserUsage>
+												<LowPassFilterUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</LowPassFilterUsage>
+												<HighPassFilterUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</HighPassFilterUsage>
+												<SpreadUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+														<Curve Name="Spread" ID="{6E61A4CD-8CF7-4F37-B294-C56CE32FAB1A}">
+															<PropertyList>
+																<Property Name="Flags" Type="int32" Value="1"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>100</YPos>
+																	<Flags>5</Flags>
+																</Point>
+																<Point>
+																	<XPos>1312.74131</XPos>
+																	<YPos>100</YPos>
+																	<Flags>0</Flags>
+																	<SegmentShape>Log1</SegmentShape>
+																</Point>
+																<Point>
+																	<XPos>4472.32947</XPos>
+																	<YPos>0</YPos>
+																	<Flags>0</Flags>
+																</Point>
+																<Point>
+																	<XPos>5000</XPos>
+																	<YPos>0</YPos>
+																	<Flags>37</Flags>
+																</Point>
+															</PointList>
+														</Curve>
+													</CurveUsageInfo>
+												</SpreadUsage>
+												<FocusUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</FocusUsage>
+												<ObstructionVolumeUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+												</ObstructionVolumeUsage>
+												<ObstructionLPFUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+												</ObstructionLPFUsage>
+												<ObstructionHPFUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+												</ObstructionHPFUsage>
+												<OcclusionVolumeUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+												</OcclusionVolumeUsage>
+												<OcclusionLPFUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+												</OcclusionLPFUsage>
+												<OcclusionHPFUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+												</OcclusionHPFUsage>
+												<DiffractionVolumeUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+												</DiffractionVolumeUsage>
+												<DiffractionLPFUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+												</DiffractionLPFUsage>
+												<DiffractionHPFUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+												</DiffractionHPFUsage>
+												<TransmissionVolumeUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+												</TransmissionVolumeUsage>
+												<TransmissionLPFUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+												</TransmissionLPFUsage>
+												<TransmissionHPFUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+												</TransmissionHPFUsage>
+											</CurveUsageInfoList>
+										</Attenuation>
+									</Custom>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7DBE265F-91B8-4B33-BD81-35FDE3C0D7C3}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6BC83C2-7FBB-45D2-846A-81A46DA893E6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="MusicLoop" ID="{D45C9EFB-F907-476D-8E7E-F50B6C61DDA0}">
+									<Language>SFX</Language>
+									<AudioFile>MusicLoop.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="594173979"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="MusicLoop" ID="{D45C9EFB-F907-476D-8E7E-F50B6C61DDA0}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Horn" ID="{9BF95A5A-7275-4777-B375-35AE0897BF62}" ShortID="40144060">
+					<ChildrenList>
+						<Sound Name="Horn_End" ID="{63188E05-E73D-41EC-9675-E45653FE147E}" ShortID="527547107">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="PCMSettings" ID="{EE2FD335-F2BD-422E-B3CF-4AC6756D7B11}" WorkUnitID="{7DBE265F-91B8-4B33-BD81-35FDE3C0D7C3}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6BC83C2-7FBB-45D2-846A-81A46DA893E6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Car_Horn_End" ID="{121E4B0E-ADF7-4E5F-BFA0-BB1A5976C9DB}">
+									<Language>SFX</Language>
+									<AudioFile>Car_Horn_End.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="532874935"/>
+									</MediaIDList>
+								</AudioFileSource>
+								<AudioFileSource Name="Horn_End" ID="{27E1E2D9-3E3E-4EE8-9A60-EF9377BC2662}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.311816720872069"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Horn_End.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="393847781"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{30851B41-610D-4775-8BF8-F1E22F64DD26}" ShortID="294427418">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Volume"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="Distance_To_Sound" ID="{6EE7AE7D-4E3E-4144-A62E-C482236486F7}" WorkUnitID="{8AA1A83F-AB51-4F7F-A3C5-104D06A5528C}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{CEAF4EB0-F885-488C-8C4A-13F18A9A4C40}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1000</XPos>
+																		<YPos>-14</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>6000</XPos>
+																		<YPos>0</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100000</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+							<ActiveSourceList>
+								<ActiveSource Name="Horn_End" ID="{27E1E2D9-3E3E-4EE8-9A60-EF9377BC2662}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<RandomSequenceContainer Name="Horn_Sequence" ID="{C351A261-C540-47DD-BB01-CF52BB227892}" ShortID="456349387">
+							<PropertyList>
+								<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="3600"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7DBE265F-91B8-4B33-BD81-35FDE3C0D7C3}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6BC83C2-7FBB-45D2-846A-81A46DA893E6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Horn_Start" ID="{EBCBBB81-EC2C-455D-8DC3-523E1086F6EE}" ShortID="97246625">
+									<PropertyList>
+										<Property Name="OverrideConversion" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="PCMSettings" ID="{EE2FD335-F2BD-422E-B3CF-4AC6756D7B11}" WorkUnitID="{7DBE265F-91B8-4B33-BD81-35FDE3C0D7C3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6BC83C2-7FBB-45D2-846A-81A46DA893E6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Horn_Start" ID="{DB3A029E-3EEF-4A73-9967-53AF847B507C}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Horn_Start.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="940415445"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="RTPC">
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{1754AC4C-49B4-42BC-9FCE-462C190786BA}" ShortID="881050197">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="Volume"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<ObjectRef Name="Distance_To_Sound" ID="{6EE7AE7D-4E3E-4144-A62E-C482236486F7}" WorkUnitID="{8AA1A83F-AB51-4F7F-A3C5-104D06A5528C}"/>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{8013E1CE-C232-4206-A1B4-A54EF8B6D534}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>1000</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>0</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>6000</XPos>
+																				<YPos>0</YPos>
+																				<Flags>0</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>100000</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+									<ActiveSourceList>
+										<ActiveSource Name="Horn_Start" ID="{DB3A029E-3EEF-4A73-9967-53AF847B507C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Playlist">
+									<Reference>
+										<ObjectRef Name="Horn_Start" ID="{EBCBBB81-EC2C-455D-8DC3-523E1086F6EE}" WorkUnitID="{53381628-9668-4F90-B385-3C40AC0DA961}"/>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</RandomSequenceContainer>
+						<Sound Name="Horn_Middle" ID="{3481D1EA-8354-4C02-A78A-A07358F9446E}" ShortID="558767743">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7DBE265F-91B8-4B33-BD81-35FDE3C0D7C3}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6BC83C2-7FBB-45D2-846A-81A46DA893E6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Horn_Middle" ID="{E2C0C4B9-2639-4E43-BE3B-25FACA0D3D70}">
+									<PropertyList>
+										<Property Name="CrossfadeDuration" Type="Real64" Value="10.973"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Horn_Middle.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="78982977"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{E96EF8F4-B8AD-405D-9659-7BAC25DF36C9}" ShortID="901697304">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Volume"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="Distance_To_Sound" ID="{6EE7AE7D-4E3E-4144-A62E-C482236486F7}" WorkUnitID="{8AA1A83F-AB51-4F7F-A3C5-104D06A5528C}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{79FCAC6E-E986-45E8-A616-97097EB75DB0}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1000</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>6000</XPos>
+																		<YPos>0</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100000</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+							<ActiveSourceList>
+								<ActiveSource Name="Horn_Middle" ID="{E2C0C4B9-2639-4E43-BE3B-25FACA0D3D70}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
+				<Sound Name="RadioStation" ID="{9E026DC6-AC37-482C-9CFD-ACA0FCCAF6EE}" ShortID="418808482">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<Custom>
+								<Attenuation Name="Attenuation (Custom)" ID="{89FDC11B-6A89-4C13-8D70-1C92141D32ED}" ShortID="382319816">
+									<PropertyList>
+										<Property Name="RadiusMax" Type="Real64" Value="5000"/>
+									</PropertyList>
+									<CurveUsageInfoList>
+										<VolumeDryUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+												<Curve Name="VolumeDry" ID="{47AD8237-E5F5-4700-984D-293D15D4F908}">
+													<PropertyList>
+														<Property Name="Flags" Type="int32" Value="3"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>0</YPos>
+															<Flags>5</Flags>
+														</Point>
+														<Point>
+															<XPos>5000</XPos>
+															<YPos>-200</YPos>
+															<Flags>37</Flags>
+														</Point>
+													</PointList>
+												</Curve>
+											</CurveUsageInfo>
+										</VolumeDryUsage>
+										<VolumeWetGameUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+										</VolumeWetGameUsage>
+										<VolumeWetUserUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+										</VolumeWetUserUsage>
+										<LowPassFilterUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</LowPassFilterUsage>
+										<HighPassFilterUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</HighPassFilterUsage>
+										<SpreadUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+												<Curve Name="Spread" ID="{9BDE8385-288A-4635-BB6D-F21807ECFC77}">
+													<PropertyList>
+														<Property Name="Flags" Type="int32" Value="1"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>100</YPos>
+															<Flags>5</Flags>
+														</Point>
+														<Point>
+															<XPos>278.85028</XPos>
+															<YPos>100</YPos>
+															<Flags>0</Flags>
+															<SegmentShape>Log3</SegmentShape>
+														</Point>
+														<Point>
+															<XPos>583.44058</XPos>
+															<YPos>0</YPos>
+															<Flags>0</Flags>
+														</Point>
+														<Point>
+															<XPos>5000</XPos>
+															<YPos>0</YPos>
+															<Flags>37</Flags>
+														</Point>
+													</PointList>
+												</Curve>
+											</CurveUsageInfo>
+										</SpreadUsage>
+										<FocusUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</FocusUsage>
+										<ObstructionVolumeUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</ObstructionVolumeUsage>
+										<ObstructionLPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</ObstructionLPFUsage>
+										<ObstructionHPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</ObstructionHPFUsage>
+										<OcclusionVolumeUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</OcclusionVolumeUsage>
+										<OcclusionLPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</OcclusionLPFUsage>
+										<OcclusionHPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</OcclusionHPFUsage>
+										<DiffractionVolumeUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</DiffractionVolumeUsage>
+										<DiffractionLPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</DiffractionLPFUsage>
+										<DiffractionHPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</DiffractionHPFUsage>
+										<TransmissionVolumeUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</TransmissionVolumeUsage>
+										<TransmissionLPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</TransmissionLPFUsage>
+										<TransmissionHPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</TransmissionHPFUsage>
+									</CurveUsageInfoList>
+								</Attenuation>
+							</Custom>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7DBE265F-91B8-4B33-BD81-35FDE3C0D7C3}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6BC83C2-7FBB-45D2-846A-81A46DA893E6}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Musical, Loop, Cinema, Games, Radio Jazz, Old SND66912" ID="{7DB6D616-EE0D-4375-A00B-3B52009FEE0B}">
+							<Language>SFX</Language>
+							<AudioFile>Musical, Loop, Cinema, Games, Radio Jazz, Old SND66912.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="41268155"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Musical, Loop, Cinema, Games, Radio Jazz, Old SND66912" ID="{7DB6D616-EE0D-4375-A00B-3B52009FEE0B}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Folder Name="Breaks" ID="{F5EC257D-F74E-4D74-8D89-DC2EBCDD7E6D}" ShortID="677110222">
+					<ChildrenList>
+						<RandomSequenceContainer Name="BreakSequence" ID="{BC96C8B7-DE3F-4EA6-AB40-68E54392EAED}" ShortID="96099911">
+							<PropertyList>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7DBE265F-91B8-4B33-BD81-35FDE3C0D7C3}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6BC83C2-7FBB-45D2-846A-81A46DA893E6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Breaks" ID="{2E65FCE5-9A89-42FB-9B74-ECB6456FD0C3}" ShortID="157394243">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="OverrideConversion" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<Custom>
+												<Conversion Name="Conversion Settings (Custom)" ID="{2078D75E-3DE8-47FE-ABD3-A5FB16A0A657}">
+													<PropertyList>
+														<Property Name="Channels" Type="int32">
+															<ValueList>
+																<Value Platform="Mac">4</Value>
+																<Value Platform="Windows">4</Value>
+															</ValueList>
+														</Property>
+														<Property Name="LRMix" Type="Real64">
+															<ValueList>
+																<Value Platform="Mac">0</Value>
+																<Value Platform="Windows">0</Value>
+															</ValueList>
+														</Property>
+														<Property Name="MaxSampleRate" Type="int32">
+															<ValueList>
+																<Value Platform="Mac">48000</Value>
+																<Value Platform="Windows">48000</Value>
+															</ValueList>
+														</Property>
+														<Property Name="MinSampleRate" Type="int32">
+															<ValueList>
+																<Value Platform="Mac">0</Value>
+																<Value Platform="Windows">0</Value>
+															</ValueList>
+														</Property>
+														<Property Name="SampleRate" Type="int32">
+															<ValueList>
+																<Value Platform="Mac">0</Value>
+																<Value Platform="Windows">0</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ConversionPluginInfoList>
+														<ConversionPluginInfo Platform="Mac">
+															<ConversionPlugin Name="" ID="{EC65E78C-71B3-4208-98D1-3861D96FAD8D}" PluginName="PCM" CompanyID="0" PluginID="1"/>
+														</ConversionPluginInfo>
+														<ConversionPluginInfo Platform="Windows">
+															<ConversionPlugin Name="" ID="{5A0ED61C-781F-4ECB-85E6-D10B6DC10DB0}" PluginName="PCM" CompanyID="0" PluginID="1"/>
+														</ConversionPluginInfo>
+													</ConversionPluginInfoList>
+												</Conversion>
+											</Custom>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6BC83C2-7FBB-45D2-846A-81A46DA893E6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Car_Break" ID="{D1209E2E-7605-4D29-9670-3D9532B5DB98}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Car_Break.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="661011211"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Car_Break" ID="{D1209E2E-7605-4D29-9670-3D9532B5DB98}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Breaks_01" ID="{3609F402-CDE3-480B-9DC6-D6C64ECE40D9}" ShortID="445027523">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7DBE265F-91B8-4B33-BD81-35FDE3C0D7C3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F6BC83C2-7FBB-45D2-846A-81A46DA893E6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Car_Break" ID="{75973027-3F26-47C0-94C3-75DCA27F9B23}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="2.30941229782433"/>
+												<Property Name="TrimEnd" Type="Real64" Value="2.74515050537211"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Car_Break.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="908485583"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Car_Break" ID="{75973027-3F26-47C0-94C3-75DCA27F9B23}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Playlist">
+									<Reference>
+										<ObjectRef Name="Breaks" ID="{2E65FCE5-9A89-42FB-9B74-ECB6456FD0C3}" WorkUnitID="{53381628-9668-4F90-B385-3C40AC0DA961}"/>
+									</Reference>
+									<Reference>
+										<ObjectRef Name="Breaks_01" ID="{3609F402-CDE3-480B-9DC6-D6C64ECE40D9}" WorkUnitID="{53381628-9668-4F90-B385-3C40AC0DA961}"/>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</RandomSequenceContainer>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

@@ -1,0 +1,54 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "2219863656",
+    "Type": "Event",
+    "GUID": "{B445AC12-298E-41A1-ABC5-A242AD297712}",
+    "Language": "SFX",
+    "Hash": "{35232BFE-B164-74E8-7FCA-6A3E64E77AA8}",
+    "ObjectPath": "CityAmbienceEvent",
+    "ShortName": "CityAmbienceEvent",
+    "Path": "Event/CityAmbienceEvent.bnk",
+    "Media": [
+     {
+      "Id": "571883099",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "City_Ambience.wav",
+      "Path": "Media/571883099.wem",
+      "CachePath": "8C/{8C60F32A-F1D6-1C9F-8EF5-7FED40A3BA9C}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2219863656",
+      "Name": "CityAmbienceEvent",
+      "ObjectPath": "\\Events\\Default Work Unit\\CityAmbienceEvent",
+      "GUID": "{B445AC12-298E-41A1-ABC5-A242AD297712}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "571883099"
+       }
+      ]
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "3159817032",
+      "Name": "Distance_To_Sound",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Distance_To_Sound",
+      "GUID": "{6EE7AE7D-4E3E-4144-A62E-C482236486F7}"
+     }
+    ]
+   }
+  ],
+  "FileHash": "{7E93429E-2ED7-1B30-5776-12AC6914F372}"
+ }
+}

@@ -1,0 +1,19 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3760982513	NeutralGearEvent			\Default Work Unit\GearEvents\NeutralGearEvent	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	2635776243	Gear_Switch			\Default Work Unit\Gear_Switch	
+
+Switch	ID	Name	Switch Group			Notes
+	614582916	Fifth	Gear_Switch			
+	670611050	Neutral	Gear_Switch			
+	931160808	Third	Gear_Switch			
+	998496889	First	Gear_Switch			
+	3476314365	Second	Gear_Switch			
+	4215888597	Fourth	Gear_Switch			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	1045151033	Car_Gear			\Default Work Unit\Car_Gear	
+	2918404151	Car_RPM			\Default Work Unit\Car_RPM	
+	3159817032	Distance_To_Sound			\Default Work Unit\Distance_To_Sound	
+

@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1839121876	StartMusicEvent			\Default Work Unit\StartMusicEvent	
+

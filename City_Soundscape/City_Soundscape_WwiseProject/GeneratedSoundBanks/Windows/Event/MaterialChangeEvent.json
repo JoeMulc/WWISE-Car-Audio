@@ -1,0 +1,108 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "4070469274",
+    "Type": "Event",
+    "GUID": "{B0E406C1-1343-4153-8994-8DB974E5A7CB}",
+    "Language": "SFX",
+    "Hash": "{1319BC75-F52D-EE79-930A-E47D04631458}",
+    "ObjectPath": "MaterialChangeEvent",
+    "ShortName": "MaterialChangeEvent",
+    "Path": "Event/MaterialChangeEvent.bnk",
+    "Media": [
+     {
+      "Id": "79100417",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "GravelTyre2.wav",
+      "Path": "Media/79100417.wem",
+      "CachePath": "2E/{2EFF41F8-55EC-EEBC-422D-D051A66BBAA9}.wem"
+     },
+     {
+      "Id": "489887613",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "TarmacTyre.wav",
+      "Path": "Media/489887613.wem",
+      "CachePath": "43/{434CBD0C-09C5-BD19-DFC4-4DC759AE0501}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "4070469274",
+      "Name": "MaterialChangeEvent",
+      "ObjectPath": "\\Events\\Default Work Unit\\MaterialChangeEvent",
+      "GUID": "{B0E406C1-1343-4153-8994-8DB974E5A7CB}",
+      "DurationType": "Infinite",
+      "SwitchContainers": [
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "3127003060",
+         "Id": "2185786256",
+         "GUID": "{5E3A0F30-9D9D-4BFB-BC89-CAD8B164896F}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "79100417"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "3127003060",
+         "Id": "3769881715",
+         "GUID": "{14AA17D1-EFC8-45DB-936E-066E6BA60C87}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "489887613"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "4164958897",
+      "Name": "Car_Speed",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Car_Speed",
+      "GUID": "{13CBBC31-7B77-426C-894D-8DDB59F5ECAF}"
+     }
+    ],
+    "SwitchGroups": [
+     {
+      "Id": "3127003060",
+      "Name": "TireMaterial",
+      "ObjectPath": "\\Switches\\Default Work Unit\\TireMaterial",
+      "GUID": "{A7A11B4E-4E38-4299-AC6C-DE7422CE421A}",
+      "Switches": [
+       {
+        "Id": "2185786256",
+        "Name": "Gravel",
+        "ObjectPath": "\\Switches\\Default Work Unit\\TireMaterial\\Gravel",
+        "GUID": "{5E3A0F30-9D9D-4BFB-BC89-CAD8B164896F}"
+       },
+       {
+        "Id": "3769881715",
+        "Name": "Tarmac",
+        "ObjectPath": "\\Switches\\Default Work Unit\\TireMaterial\\Tarmac",
+        "GUID": "{14AA17D1-EFC8-45DB-936E-066E6BA60C87}"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{2BF47191-21D2-8D76-E24D-84CD8C93844B}"
+ }
+}

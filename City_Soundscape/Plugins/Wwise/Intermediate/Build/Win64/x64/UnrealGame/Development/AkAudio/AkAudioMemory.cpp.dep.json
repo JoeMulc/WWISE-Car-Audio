@@ -1,0 +1,16 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\year_4\\cmp407\\cmp407_coursework_city_soundscape\\city_soundscape\\plugins\\wwise\\source\\akaudio\\private\\wwise\\stats\\akaudiomemory.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\year_4\\cmp407\\cmp407_coursework_city_soundscape\\city_soundscape\\intermediate\\build\\win64\\x64\\city_soundscape\\development\\engine\\sharedpch.engine.project.valapi.cpp20.h.pch",
+        "Includes": [
+            "d:\\year_4\\cmp407\\cmp407_coursework_city_soundscape\\city_soundscape\\plugins\\wwise\\intermediate\\build\\win64\\x64\\unrealgame\\development\\akaudio\\definitions.akaudio.h",
+            "d:\\year_4\\cmp407\\cmp407_coursework_city_soundscape\\city_soundscape\\plugins\\wwise\\source\\akaudio\\public\\wwise\\stats\\akaudiomemory.h",
+            "d:\\year_4\\cmp407\\cmp407_coursework_city_soundscape\\city_soundscape\\plugins\\wwisesoundengine\\source\\wwisesoundengine\\public\\wwisedefines.h",
+            "d:\\year_4\\cmp407\\cmp407_coursework_city_soundscape\\city_soundscape\\plugins\\wwise\\source\\wwiseutils\\public\\wwise\\stats\\memory.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

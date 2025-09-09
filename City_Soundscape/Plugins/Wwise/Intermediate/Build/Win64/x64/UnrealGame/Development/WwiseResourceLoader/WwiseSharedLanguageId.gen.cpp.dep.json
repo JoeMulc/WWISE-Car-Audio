@@ -1,0 +1,19 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\year_4\\cmp407\\cmp407_coursework_city_soundscape\\city_soundscape\\plugins\\wwise\\intermediate\\build\\win64\\unrealgame\\inc\\wwiseresourceloader\\uht\\wwisesharedlanguageid.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\year_4\\cmp407\\cmp407_coursework_city_soundscape\\city_soundscape\\intermediate\\build\\win64\\x64\\city_soundscape\\development\\engine\\sharedpch.engine.project.valapi.cpp20.h.pch",
+        "Includes": [
+            "d:\\year_4\\cmp407\\cmp407_coursework_city_soundscape\\city_soundscape\\plugins\\wwise\\intermediate\\build\\win64\\x64\\unrealgame\\development\\wwiseresourceloader\\definitions.wwiseresourceloader.h",
+            "d:\\year_4\\cmp407\\cmp407_coursework_city_soundscape\\city_soundscape\\plugins\\wwise\\source\\wwiseresourceloader\\public\\wwise\\wwisesharedlanguageid.h",
+            "d:\\year_4\\cmp407\\cmp407_coursework_city_soundscape\\city_soundscape\\plugins\\wwise\\source\\wwiseresourceloader\\public\\wwise\\wwiselanguageid.h",
+            "d:\\year_4\\cmp407\\cmp407_coursework_city_soundscape\\city_soundscape\\plugins\\wwise\\intermediate\\build\\win64\\unrealgame\\inc\\wwiseresourceloader\\uht\\wwiselanguageid.generated.h",
+            "d:\\year_4\\cmp407\\cmp407_coursework_city_soundscape\\city_soundscape\\plugins\\wwise\\source\\wwisefilehandler\\public\\wwise\\cookeddata\\wwiselanguagecookeddata.h",
+            "d:\\year_4\\cmp407\\cmp407_coursework_city_soundscape\\city_soundscape\\plugins\\wwise\\intermediate\\build\\win64\\unrealgame\\inc\\wwisefilehandler\\uht\\wwiselanguagecookeddata.generated.h",
+            "d:\\year_4\\cmp407\\cmp407_coursework_city_soundscape\\city_soundscape\\plugins\\wwise\\intermediate\\build\\win64\\unrealgame\\inc\\wwiseresourceloader\\uht\\wwisesharedlanguageid.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

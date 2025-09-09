@@ -1,0 +1,21 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\year_4\\cmp407\\cmp407_coursework_city_soundscape\\city_soundscape\\plugins\\wwise\\source\\wwisefilehandler\\private\\wwise\\cookeddata\\wwisemediacookeddata.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\year_4\\cmp407\\cmp407_coursework_city_soundscape\\city_soundscape\\intermediate\\build\\win64\\x64\\city_soundscape\\development\\engine\\sharedpch.engine.project.valapi.cpp20.h.pch",
+        "Includes": [
+            "d:\\year_4\\cmp407\\cmp407_coursework_city_soundscape\\city_soundscape\\plugins\\wwise\\intermediate\\build\\win64\\x64\\unrealgame\\development\\wwisefilehandler\\definitions.wwisefilehandler.h",
+            "d:\\year_4\\cmp407\\cmp407_coursework_city_soundscape\\city_soundscape\\plugins\\wwise\\source\\wwisefilehandler\\public\\wwise\\cookeddata\\wwisemediacookeddata.h",
+            "d:\\year_4\\cmp407\\cmp407_coursework_city_soundscape\\city_soundscape\\plugins\\wwise\\source\\wwisefilehandler\\public\\wwise\\wwisepackagedfile.h",
+            "d:\\year_4\\cmp407\\cmp407_coursework_city_soundscape\\city_soundscape\\plugins\\wwisesoundengine\\source\\wwiselowlevelutils\\public\\wwise\\wwiseunrealversion.h",
+            "d:\\year_4\\cmp407\\cmp407_coursework_city_soundscape\\city_soundscape\\plugins\\wwise\\intermediate\\build\\win64\\unrealgame\\inc\\wwisefilehandler\\uht\\wwisepackagedfile.generated.h",
+            "d:\\year_4\\cmp407\\cmp407_coursework_city_soundscape\\city_soundscape\\plugins\\wwise\\intermediate\\build\\win64\\unrealgame\\inc\\wwisefilehandler\\uht\\wwisemediacookeddata.generated.h",
+            "d:\\year_4\\cmp407\\cmp407_coursework_city_soundscape\\city_soundscape\\plugins\\wwise\\source\\wwisefilehandler\\public\\wwise\\stats\\filehandler.h",
+            "d:\\year_4\\cmp407\\cmp407_coursework_city_soundscape\\city_soundscape\\plugins\\wwisesoundengine\\source\\wwiselowlevelutils\\public\\wwise\\stats\\namedevents.h",
+            "c:\\program files (x86)\\windows kits\\10\\include\\10.0.22621.0\\ucrt\\inttypes.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

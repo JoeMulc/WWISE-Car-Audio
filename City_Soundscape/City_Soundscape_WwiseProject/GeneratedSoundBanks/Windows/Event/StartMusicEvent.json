@@ -1,0 +1,47 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "1839121876",
+    "Type": "Event",
+    "GUID": "{FEA1F73D-835B-4864-B7E8-0352F111C064}",
+    "Language": "SFX",
+    "Hash": "{BB4B0C32-0209-E40D-650B-724AEB760CD3}",
+    "ObjectPath": "StartMusicEvent",
+    "ShortName": "StartMusicEvent",
+    "Path": "Event/StartMusicEvent.bnk",
+    "Media": [
+     {
+      "Id": "594173979",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "MusicLoop.wav",
+      "Path": "Media/594173979.wem",
+      "CachePath": "AF/{AF8B6869-6BF3-B6EE-1401-858F8E4F2D0B}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "1839121876",
+      "Name": "StartMusicEvent",
+      "ObjectPath": "\\Events\\Default Work Unit\\StartMusicEvent",
+      "GUID": "{FEA1F73D-835B-4864-B7E8-0352F111C064}",
+      "MaxAttenuation": "5000",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "594173979"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{1E7A2CB4-2C36-5BF1-797B-5B22D9CE41C5}"
+ }
+}

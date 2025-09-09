@@ -1,0 +1,47 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "1008574522",
+    "Type": "Event",
+    "GUID": "{7EC6EE35-3FCB-495B-9401-43B727C41B13}",
+    "Language": "SFX",
+    "Hash": "{BA478443-7ADB-AB1E-E89D-EA49CD07B477}",
+    "ObjectPath": "RadioStartEvent",
+    "ShortName": "RadioStartEvent",
+    "Path": "Event/RadioStartEvent.bnk",
+    "Media": [
+     {
+      "Id": "41268155",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Musical, Loop, Cinema, Games, Radio Jazz, Old SND66912.wav",
+      "Path": "Media/41268155.wem",
+      "CachePath": "59/{599E9EC7-E115-9E09-36A4-76B2087086B8}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "1008574522",
+      "Name": "RadioStartEvent",
+      "ObjectPath": "\\Events\\Default Work Unit\\RadioStartEvent",
+      "GUID": "{7EC6EE35-3FCB-495B-9401-43B727C41B13}",
+      "MaxAttenuation": "5000",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "41268155"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{8A4E3374-53C1-69BE-7C23-4437709B45C9}"
+ }
+}

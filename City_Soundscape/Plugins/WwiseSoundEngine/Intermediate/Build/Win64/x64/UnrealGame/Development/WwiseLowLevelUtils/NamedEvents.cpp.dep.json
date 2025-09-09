@@ -1,0 +1,14 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\year_4\\cmp407\\cmp407_coursework_city_soundscape\\city_soundscape\\plugins\\wwisesoundengine\\source\\wwiselowlevelutils\\private\\wwise\\stats\\namedevents.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\year_4\\cmp407\\cmp407_coursework_city_soundscape\\city_soundscape\\intermediate\\build\\win64\\x64\\city_soundscape\\development\\core\\sharedpch.core.project.valapi.cpp20.h.pch",
+        "Includes": [
+            "d:\\year_4\\cmp407\\cmp407_coursework_city_soundscape\\city_soundscape\\plugins\\wwisesoundengine\\intermediate\\build\\win64\\x64\\unrealgame\\development\\wwiselowlevelutils\\definitions.wwiselowlevelutils.h",
+            "d:\\year_4\\cmp407\\cmp407_coursework_city_soundscape\\city_soundscape\\plugins\\wwisesoundengine\\source\\wwiselowlevelutils\\public\\wwise\\stats\\namedevents.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

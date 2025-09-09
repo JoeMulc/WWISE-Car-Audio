@@ -1,0 +1,47 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "3046058876",
+    "Type": "Event",
+    "GUID": "{4C6DD95F-AF6A-4CD4-8DDA-BC12A75BF56A}",
+    "Language": "SFX",
+    "Hash": "{6AAFCDCC-4CFE-B5DC-B375-192A7658D7CF}",
+    "ObjectPath": "SirenStartEvent",
+    "ShortName": "SirenStartEvent",
+    "Path": "Event/SirenStartEvent.bnk",
+    "Media": [
+     {
+      "Id": "92163103",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Vehicles, Siren, Ambulance, Siren Wailing, Clean, Long, Close Up SND39712.wav",
+      "Path": "Media/92163103.wem",
+      "CachePath": "EB/{EBC013CB-1D9F-2F97-712C-6E89BECEC6F2}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3046058876",
+      "Name": "SirenStartEvent",
+      "ObjectPath": "\\Events\\Default Work Unit\\SirenStartEvent",
+      "GUID": "{4C6DD95F-AF6A-4CD4-8DDA-BC12A75BF56A}",
+      "MaxAttenuation": "5000",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "92163103"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{8E2C858E-0A4E-E41C-4977-491DF2DB0C14}"
+ }
+}

@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "1443908335",
+    "Type": "Event",
+    "GUID": "{4A464CEB-1541-41D8-A4D2-BACB62F749E7}",
+    "Language": "SFX",
+    "Hash": "{30A9B8C2-D2F1-C80B-387F-7E84FFBDF99B}",
+    "ObjectPath": "CarStopEvent",
+    "ShortName": "CarStopEvent",
+    "Path": "Event/CarStopEvent.bnk",
+    "Media": [
+     {
+      "Id": "65894989",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Engine_Stop.wav",
+      "Path": "Media/65894989.wem",
+      "CachePath": "45/{45A4AC3B-7D80-7741-0272-A07FF9A790B3}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "1443908335",
+      "Name": "CarStopEvent",
+      "ObjectPath": "\\Events\\Default Work Unit\\CarStopEvent",
+      "GUID": "{4A464CEB-1541-41D8-A4D2-BACB62F749E7}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.6014062",
+      "DurationMax": "1.6014062",
+      "MediaRefs": [
+       {
+        "Id": "65894989"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{F6879D44-115F-4CBB-4611-9708AF68B271}"
+ }
+}

@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3046058876	SirenStartEvent			\Default Work Unit\SirenStartEvent	
+

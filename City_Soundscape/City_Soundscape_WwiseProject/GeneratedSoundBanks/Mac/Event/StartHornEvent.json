@@ -1,0 +1,66 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "2212722568",
+    "Type": "Event",
+    "GUID": "{29993EAF-804F-450D-852E-3F60C7F40A0E}",
+    "Language": "SFX",
+    "Hash": "{2A130374-466D-7849-47DC-024E893D64A7}",
+    "ObjectPath": "StartHornEvent",
+    "ShortName": "StartHornEvent",
+    "Path": "Event/StartHornEvent.bnk",
+    "Media": [
+     {
+      "Id": "78982977",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Horn_Middle.wav",
+      "Path": "Media/78982977.wem",
+      "CachePath": "AC/{AC5879CD-394B-0C3E-F594-12BD5A66A241}.wem"
+     },
+     {
+      "Id": "940415445",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Horn_Start.wav",
+      "Path": "Media/940415445.wem",
+      "CachePath": "A2/{A21D2816-DB27-1203-55AD-7FE82F7920D4}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2212722568",
+      "Name": "StartHornEvent",
+      "ObjectPath": "\\Events\\Default Work Unit\\HornEvents\\StartHornEvent",
+      "GUID": "{29993EAF-804F-450D-852E-3F60C7F40A0E}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "78982977"
+       },
+       {
+        "Id": "940415445"
+       }
+      ]
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "3159817032",
+      "Name": "Distance_To_Sound",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Distance_To_Sound",
+      "GUID": "{6EE7AE7D-4E3E-4144-A62E-C482236486F7}"
+     }
+    ]
+   }
+  ],
+  "FileHash": "{308A8187-D8D5-26A4-B0CF-80F277FA47CF}"
+ }
+}

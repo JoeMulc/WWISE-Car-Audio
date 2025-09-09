@@ -1,0 +1,7 @@
+*.log
+*.wav
+*.pch
+*.exe
+*.pdb
+*.ucas
+*.ushaderbytecode

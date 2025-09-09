@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "817005157",
+    "Type": "Bus",
+    "GUID": "{83E197B7-F7C4-4076-A6D1-6E9A555D5132}",
+    "Language": "SFX",
+    "Hash": "{F21423D7-28BC-31F1-715A-044B4653C8F0}",
+    "ObjectPath": "Garage_Reverb",
+    "ShortName": "Garage_Reverb",
+    "Path": "Bus/Garage_Reverb.bnk",
+    "Plugins": {
+     "ShareSets": [
+      {
+       "Id": "2995775460",
+       "Name": "Room_Small",
+       "ObjectPath": "\\Effects\\Factory Effects\\RoomVerb\\Rooms\\Room_Small",
+       "GUID": "{577F1466-A63B-47F7-98BD-C56E433F8B5D}",
+       "LibName": "Wwise RoomVerb",
+       "LibId": "7733251"
+      }
+     ]
+    },
+    "AuxBusses": [
+     {
+      "Id": "817005157",
+      "Name": "Garage_Reverb",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Garage_Reverb",
+      "GUID": "{83E197B7-F7C4-4076-A6D1-6E9A555D5132}",
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "2995775460"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "FileHash": "{0468A2EE-8B23-2350-2815-B65CE2390B53}"
+ }
+}

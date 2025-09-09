@@ -1,0 +1,26 @@
+Switch Group	ID	Name			Wwise Object Path	Notes
+	2635776243	Gear_Switch			\Default Work Unit\Gear_Switch	
+
+Switch	ID	Name	Switch Group			Notes
+	614582916	Fifth	Gear_Switch			
+	670611050	Neutral	Gear_Switch			
+	931160808	Third	Gear_Switch			
+	998496889	First	Gear_Switch			
+	3476314365	Second	Gear_Switch			
+	4215888597	Fourth	Gear_Switch			
+
+Audio Bus	ID	Name			Wwise Object Path	Notes
+	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+
+Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	817005157	Garage_Reverb			\Default Work Unit\Master Audio Bus\Garage_Reverb	
+	3400062578	Tunnel_Reverb			\Default Work Unit\Master Audio Bus\Tunnel_Reverb	
+
+Effect plug-ins	ID	Name	Type				Notes
+	2513915904	Hall_Large	Wwise RoomVerb			
+	2995775460	Room_Small	Wwise RoomVerb			
+
+Audio Devices	ID	Name	Type				Notes
+	2317455096	No_Output	No Output			
+	3859886410	System	System			
+

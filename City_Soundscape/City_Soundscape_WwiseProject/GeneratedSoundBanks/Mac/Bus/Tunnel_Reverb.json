@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "3400062578",
+    "Type": "Bus",
+    "GUID": "{53754183-ED35-48A7-9734-4A979B92248A}",
+    "Language": "SFX",
+    "Hash": "{E4503958-D374-2D7C-AA1B-DC91ECC6BDC8}",
+    "ObjectPath": "Tunnel_Reverb",
+    "ShortName": "Tunnel_Reverb",
+    "Path": "Bus/Tunnel_Reverb.bnk",
+    "Plugins": {
+     "ShareSets": [
+      {
+       "Id": "2513915904",
+       "Name": "Hall_Large",
+       "ObjectPath": "\\Effects\\Factory Effects\\RoomVerb\\Halls\\Hall_Large",
+       "GUID": "{6D154498-FF6D-4823-96FC-56841B70E079}",
+       "LibName": "Wwise RoomVerb",
+       "LibId": "7733251"
+      }
+     ]
+    },
+    "AuxBusses": [
+     {
+      "Id": "3400062578",
+      "Name": "Tunnel_Reverb",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Tunnel_Reverb",
+      "GUID": "{53754183-ED35-48A7-9734-4A979B92248A}",
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "2513915904"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "FileHash": "{3422392C-92C8-190F-D1B2-AA5ED592FA6D}"
+ }
+}

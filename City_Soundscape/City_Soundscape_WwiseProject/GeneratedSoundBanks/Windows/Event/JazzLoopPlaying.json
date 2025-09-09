@@ -1,0 +1,111 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "731719638",
+    "Type": "Event",
+    "GUID": "{4592F631-E7B9-4478-BCEF-9FA3A3AF0747}",
+    "Language": "SFX",
+    "Hash": "{FC4D62B7-902D-24EA-EF03-B714DA14F1B9}",
+    "ObjectPath": "JazzLoopPlaying",
+    "ShortName": "JazzLoopPlaying",
+    "Path": "Event/JazzLoopPlaying.bnk",
+    "Media": [
+     {
+      "Id": "508097322",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Musical, Loop, Jazz, Blues, Smooth, Improvisation 04 SND96594.wav",
+      "Path": "Media/508097322.wem",
+      "CachePath": "C0/{C05223A2-F67D-8C68-EE8B-02371A5D83E2}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "731719638",
+      "Name": "JazzLoopPlaying",
+      "ObjectPath": "\\Events\\Default Work Unit\\JazzLoopPlaying",
+      "GUID": "{4592F631-E7B9-4478-BCEF-9FA3A3AF0747}",
+      "DurationType": "OneShot",
+      "DurationMin": "36.57145",
+      "DurationMax": "36.57145",
+      "MediaRefs": [
+       {
+        "Id": "508097322"
+       }
+      ]
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "1045151033",
+      "Name": "Car_Gear",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Car_Gear",
+      "GUID": "{D8AAF1B6-26D5-4293-B814-FBCFCD512A10}"
+     },
+     {
+      "Id": "2918404151",
+      "Name": "Car_RPM",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Car_RPM",
+      "GUID": "{E8A5DAA3-887D-40FC-89AF-30315129E2ED}"
+     }
+    ],
+    "SwitchGroups": [
+     {
+      "Id": "2635776243",
+      "Name": "Gear_Switch",
+      "ObjectPath": "\\Switches\\Default Work Unit\\Gear_Switch",
+      "GUID": "{04E34D36-D91D-4E43-A108-07A485E59232}",
+      "GameParameterRef": {
+       "Id": "1045151033"
+      },
+      "Switches": [
+       {
+        "Id": "614582916",
+        "Name": "Fifth",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Gear_Switch\\Fifth",
+        "GUID": "{771E803F-0BE1-44E6-AC72-56F0E175DEFA}"
+       },
+       {
+        "Id": "670611050",
+        "Name": "Neutral",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Gear_Switch\\Neutral",
+        "GUID": "{74B11EC2-2402-4C8A-A3F9-938048A2C007}"
+       },
+       {
+        "Id": "931160808",
+        "Name": "Third",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Gear_Switch\\Third",
+        "GUID": "{794978BB-B840-4A4C-9483-E261B8A35562}"
+       },
+       {
+        "Id": "998496889",
+        "Name": "First",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Gear_Switch\\First",
+        "GUID": "{0685A7B3-DE85-47CC-BED3-3CA56E11C574}"
+       },
+       {
+        "Id": "3476314365",
+        "Name": "Second",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Gear_Switch\\Second",
+        "GUID": "{A5578E5C-41E1-4EDC-869C-84DE3BC1FA99}"
+       },
+       {
+        "Id": "4215888597",
+        "Name": "Fourth",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Gear_Switch\\Fourth",
+        "GUID": "{4C1B05FB-1283-48E7-A28B-D1F80419816F}"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{4FCD8D08-6271-5C04-C3A1-DE4159F85B38}"
+ }
+}

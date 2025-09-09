@@ -1,0 +1,27 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\year_4\\cmp407\\cmp407_coursework_city_soundscape\\city_soundscape\\plugins\\wwise\\source\\wwise\\private\\wwise\\wwisemodule.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\year_4\\cmp407\\cmp407_coursework_city_soundscape\\city_soundscape\\intermediate\\build\\win64\\x64\\city_soundscape\\development\\engine\\sharedpch.engine.project.valapi.cpp20.h.pch",
+        "Includes": [
+            "d:\\year_4\\cmp407\\cmp407_coursework_city_soundscape\\city_soundscape\\plugins\\wwise\\intermediate\\build\\win64\\x64\\unrealgame\\development\\wwise\\definitions.wwise.h",
+            "d:\\year_4\\cmp407\\cmp407_coursework_city_soundscape\\city_soundscape\\plugins\\wwise\\source\\wwise\\public\\wwise\\stats\\wwise.h",
+            "d:\\year_4\\cmp407\\cmp407_coursework_city_soundscape\\city_soundscape\\plugins\\wwisesoundengine\\source\\wwiselowlevelutils\\public\\wwise\\stats\\namedevents.h",
+            "d:\\year_4\\cmp407\\cmp407_coursework_city_soundscape\\city_soundscape\\plugins\\wwisesoundengine\\source\\wwisesoundengine\\public\\wwisedefines.h",
+            "d:\\year_4\\cmp407\\cmp407_coursework_city_soundscape\\city_soundscape\\plugins\\wwise\\source\\wwiseutils\\public\\wwiseunrealdefines.h",
+            "d:\\year_4\\cmp407\\cmp407_coursework_city_soundscape\\city_soundscape\\plugins\\wwisesoundengine\\source\\wwiselowlevelutils\\public\\wwise\\wwiseunrealversion.h",
+            "d:\\year_4\\cmp407\\cmp407_coursework_city_soundscape\\city_soundscape\\plugins\\wwise\\source\\wwisepackagingruntime\\public\\wwise\\wwisepackagingruntimemoduleimpl.h",
+            "d:\\year_4\\cmp407\\cmp407_coursework_city_soundscape\\city_soundscape\\plugins\\wwise\\source\\wwisepackagingruntime\\public\\wwise\\wwisepackagingruntimemodule.h",
+            "d:\\year_4\\cmp407\\cmp407_coursework_city_soundscape\\city_soundscape\\plugins\\wwise\\source\\wwiseaudiolinkruntime\\private\\wwise\\wwiseaudiolinkruntimemodule.h",
+            "d:\\year_4\\cmp407\\cmp407_coursework_city_soundscape\\city_soundscape\\plugins\\wwise\\source\\wwiseaudiolinkruntime\\private\\wwise\\audiolink\\wwiseaudiolinkfactory.h",
+            "d:\\epic games\\ue_5.4\\engine\\source\\runtime\\audiolink\\audiolinkengine\\public\\iaudiolink.h",
+            "d:\\epic games\\ue_5.4\\engine\\source\\runtime\\audiolink\\audiolinkengine\\public\\iaudiolinkfactory.h",
+            "d:\\epic games\\ue_5.4\\engine\\source\\runtime\\engine\\public\\audiodevicemanager.h",
+            "d:\\epic games\\ue_5.4\\engine\\source\\runtime\\engine\\public\\audiothread.h",
+            "d:\\epic games\\ue_5.4\\engine\\source\\runtime\\audiolink\\audiolinkengine\\public\\ibufferedaudiooutput.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

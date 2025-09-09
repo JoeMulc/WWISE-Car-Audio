@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2219863656	CityAmbienceEvent			\Default Work Unit\CityAmbienceEvent	
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	3159817032	Distance_To_Sound			\Default Work Unit\Distance_To_Sound	
+

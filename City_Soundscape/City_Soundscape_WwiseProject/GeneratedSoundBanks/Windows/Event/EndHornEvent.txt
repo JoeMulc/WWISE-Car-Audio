@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2107708093	EndHornEvent			\Default Work Unit\HornEvents\EndHornEvent	
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	3159817032	Distance_To_Sound			\Default Work Unit\Distance_To_Sound	
+

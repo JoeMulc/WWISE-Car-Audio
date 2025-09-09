@@ -1,0 +1,13 @@
+Event	ID	Name			Wwise Object Path	Notes
+	4070469274	MaterialChangeEvent			\Default Work Unit\MaterialChangeEvent	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	3127003060	TireMaterial			\Default Work Unit\TireMaterial	
+
+Switch	ID	Name	Switch Group			Notes
+	2185786256	Gravel	TireMaterial			
+	3769881715	Tarmac	TireMaterial			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	4164958897	Car_Speed			\Default Work Unit\Car_Speed	
+

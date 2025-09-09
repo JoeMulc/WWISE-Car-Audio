@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{8AA1A83F-AB51-4F7F-A3C5-104D06A5528C}" SchemaVersion="123">
+	<GameParameters>
+		<WorkUnit Name="Default Work Unit" ID="{8AA1A83F-AB51-4F7F-A3C5-104D06A5528C}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="Car_RPM" ID="{E8A5DAA3-887D-40FC-89AF-30315129E2ED}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="7000"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Car_Gear" ID="{D8AAF1B6-26D5-4293-B814-FBCFCD512A10}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="5"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Car_Speed" ID="{13CBBC31-7B77-426C-894D-8DDB59F5ECAF}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Distance_To_Sound" ID="{6EE7AE7D-4E3E-4144-A62E-C482236486F7}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="100000"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

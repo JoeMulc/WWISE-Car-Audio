@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{05EC6AF0-66C8-4F40-AF2A-B75C0C2C09DD}" SchemaVersion="123">
+	<Switches>
+		<WorkUnit Name="Default Work Unit" ID="{05EC6AF0-66C8-4F40-AF2A-B75C0C2C09DD}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="Gear_Switch" ID="{04E34D36-D91D-4E43-A108-07A485E59232}">
+					<PropertyList>
+						<Property Name="UseGameParameter" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Switch Name="Neutral" ID="{74B11EC2-2402-4C8A-A3F9-938048A2C007}"/>
+						<Switch Name="First" ID="{0685A7B3-DE85-47CC-BED3-3CA56E11C574}"/>
+						<Switch Name="Second" ID="{A5578E5C-41E1-4EDC-869C-84DE3BC1FA99}"/>
+						<Switch Name="Third" ID="{794978BB-B840-4A4C-9483-E261B8A35562}"/>
+						<Switch Name="Fourth" ID="{4C1B05FB-1283-48E7-A28B-D1F80419816F}"/>
+						<Switch Name="Fifth" ID="{771E803F-0BE1-44E6-AC72-56F0E175DEFA}"/>
+					</ChildrenList>
+					<SwitchOnRTPC>
+						<GameParameterRef Name="Car_Gear" ID="{D8AAF1B6-26D5-4293-B814-FBCFCD512A10}"/>
+						<Curve Name="" ID="{F098F16B-B5C2-46C2-A208-BC2F49122BC5}">
+							<PropertyList>
+								<Property Name="Flags" Type="int32" Value="65537"/>
+							</PropertyList>
+							<PointList>
+								<Point>
+									<XPos>0</XPos>
+									<YPos>1</YPos>
+									<Flags>5</Flags>
+								</Point>
+								<Point>
+									<XPos>1</XPos>
+									<YPos>2</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>2</XPos>
+									<YPos>3</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>3</XPos>
+									<YPos>4</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>3.999</XPos>
+									<YPos>5</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>4.999</XPos>
+									<YPos>6</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>5</XPos>
+									<YPos>6</YPos>
+									<Flags>37</Flags>
+								</Point>
+							</PointList>
+						</Curve>
+					</SwitchOnRTPC>
+				</SwitchGroup>
+				<SwitchGroup Name="TireMaterial" ID="{A7A11B4E-4E38-4299-AC6C-DE7422CE421A}">
+					<ChildrenList>
+						<Switch Name="Gravel" ID="{5E3A0F30-9D9D-4BFB-BC89-CAD8B164896F}"/>
+						<Switch Name="Tarmac" ID="{14AA17D1-EFC8-45DB-936E-066E6BA60C87}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>

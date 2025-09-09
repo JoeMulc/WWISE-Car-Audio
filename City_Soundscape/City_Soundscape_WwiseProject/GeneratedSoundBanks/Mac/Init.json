@@ -1,0 +1,190 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "1355168291",
+    "Type": "User",
+    "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
+    "Language": "SFX",
+    "Hash": "{E3CBF5CF-3269-22EC-387D-A769FCD71C05}",
+    "ObjectPath": "Init",
+    "ShortName": "Init",
+    "Path": "Init.bnk",
+    "Plugins": {
+     "ShareSets": [
+      {
+       "Id": "2513915904",
+       "Name": "Hall_Large",
+       "ObjectPath": "\\Effects\\Factory Effects\\RoomVerb\\Halls\\Hall_Large",
+       "GUID": "{6D154498-FF6D-4823-96FC-56841B70E079}",
+       "LibName": "Wwise RoomVerb",
+       "LibId": "7733251"
+      },
+      {
+       "Id": "2995775460",
+       "Name": "Room_Small",
+       "ObjectPath": "\\Effects\\Factory Effects\\RoomVerb\\Rooms\\Room_Small",
+       "GUID": "{577F1466-A63B-47F7-98BD-C56E433F8B5D}",
+       "LibName": "Wwise RoomVerb",
+       "LibId": "7733251"
+      }
+     ],
+     "AudioDevices": [
+      {
+       "Id": "2317455096",
+       "Name": "No_Output",
+       "ObjectPath": "\\Audio Devices\\Default Work Unit\\No_Output",
+       "GUID": "{3F30FD9F-A6EA-4EC1-B62D-7552E18EBFEF}",
+       "LibName": "No Output",
+       "LibId": "11862023"
+      },
+      {
+       "Id": "3859886410",
+       "Name": "System",
+       "ObjectPath": "\\Audio Devices\\Default Work Unit\\System",
+       "GUID": "{052214CF-38DA-42B8-AA89-A8D0759CAF12}",
+       "LibName": "System",
+       "LibId": "11403271"
+      }
+     ]
+    },
+    "Busses": [
+     {
+      "Id": "3803692087",
+      "Name": "Master Audio Bus",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus",
+      "GUID": "{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"
+     }
+    ],
+    "AuxBusses": [
+     {
+      "Id": "817005157",
+      "Name": "Garage_Reverb",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Garage_Reverb",
+      "GUID": "{83E197B7-F7C4-4076-A6D1-6E9A555D5132}",
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "2995775460"
+        }
+       ]
+      }
+     },
+     {
+      "Id": "3400062578",
+      "Name": "Tunnel_Reverb",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Tunnel_Reverb",
+      "GUID": "{53754183-ED35-48A7-9734-4A979B92248A}",
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "2513915904"
+        }
+       ]
+      }
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "1045151033",
+      "Name": "Car_Gear",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Car_Gear",
+      "GUID": "{D8AAF1B6-26D5-4293-B814-FBCFCD512A10}"
+     },
+     {
+      "Id": "2918404151",
+      "Name": "Car_RPM",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Car_RPM",
+      "GUID": "{E8A5DAA3-887D-40FC-89AF-30315129E2ED}"
+     },
+     {
+      "Id": "3159817032",
+      "Name": "Distance_To_Sound",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Distance_To_Sound",
+      "GUID": "{6EE7AE7D-4E3E-4144-A62E-C482236486F7}"
+     },
+     {
+      "Id": "4164958897",
+      "Name": "Car_Speed",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Car_Speed",
+      "GUID": "{13CBBC31-7B77-426C-894D-8DDB59F5ECAF}"
+     }
+    ],
+    "SwitchGroups": [
+     {
+      "Id": "2635776243",
+      "Name": "Gear_Switch",
+      "ObjectPath": "\\Switches\\Default Work Unit\\Gear_Switch",
+      "GUID": "{04E34D36-D91D-4E43-A108-07A485E59232}",
+      "GameParameterRef": {
+       "Id": "1045151033"
+      },
+      "Switches": [
+       {
+        "Id": "614582916",
+        "Name": "Fifth",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Gear_Switch\\Fifth",
+        "GUID": "{771E803F-0BE1-44E6-AC72-56F0E175DEFA}"
+       },
+       {
+        "Id": "670611050",
+        "Name": "Neutral",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Gear_Switch\\Neutral",
+        "GUID": "{74B11EC2-2402-4C8A-A3F9-938048A2C007}"
+       },
+       {
+        "Id": "931160808",
+        "Name": "Third",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Gear_Switch\\Third",
+        "GUID": "{794978BB-B840-4A4C-9483-E261B8A35562}"
+       },
+       {
+        "Id": "998496889",
+        "Name": "First",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Gear_Switch\\First",
+        "GUID": "{0685A7B3-DE85-47CC-BED3-3CA56E11C574}"
+       },
+       {
+        "Id": "3476314365",
+        "Name": "Second",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Gear_Switch\\Second",
+        "GUID": "{A5578E5C-41E1-4EDC-869C-84DE3BC1FA99}"
+       },
+       {
+        "Id": "4215888597",
+        "Name": "Fourth",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Gear_Switch\\Fourth",
+        "GUID": "{4C1B05FB-1283-48E7-A28B-D1F80419816F}"
+       }
+      ]
+     },
+     {
+      "Id": "3127003060",
+      "Name": "TireMaterial",
+      "ObjectPath": "\\Switches\\Default Work Unit\\TireMaterial",
+      "GUID": "{A7A11B4E-4E38-4299-AC6C-DE7422CE421A}",
+      "Switches": [
+       {
+        "Id": "2185786256",
+        "Name": "Gravel",
+        "ObjectPath": "\\Switches\\Default Work Unit\\TireMaterial\\Gravel",
+        "GUID": "{5E3A0F30-9D9D-4BFB-BC89-CAD8B164896F}"
+       },
+       {
+        "Id": "3769881715",
+        "Name": "Tarmac",
+        "ObjectPath": "\\Switches\\Default Work Unit\\TireMaterial\\Tarmac",
+        "GUID": "{14AA17D1-EFC8-45DB-936E-066E6BA60C87}"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{B4410C7B-3890-A0C0-FA5D-620DDF4C38A8}"
+ }
+}

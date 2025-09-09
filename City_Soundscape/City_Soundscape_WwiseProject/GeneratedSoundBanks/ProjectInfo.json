@@ -1,0 +1,36 @@
+{
+ "ProjectInfo": {
+  "Project": {
+   "Name": "City_Soundscape_WwiseProject",
+   "GUID": "{BDA17035-7175-4744-9260-52708AF5D721}",
+   "Generator": "2024.1.0.8669"
+  },
+  "CacheRoot": "../.cache",
+  "Platforms": [
+   {
+    "Name": "Mac",
+    "GUID": "{C12C1FAE-E50E-4069-9A03-76CFC78DB3DC}",
+    "BasePlatform": "Mac",
+    "BasePlatformGUID": "{9C6217D5-DD11-4795-87C1-6CE02853C540}",
+    "Path": "Mac"
+   },
+   {
+    "Name": "Windows",
+    "GUID": "{ED270BDA-C58E-4E6F-ADD9-6CFA6FE4C23E}",
+    "BasePlatform": "Windows",
+    "BasePlatformGUID": "{6E0CB257-C6C8-4C5C-8366-2740DFC441EB}",
+    "Path": "Windows"
+   }
+  ],
+  "Languages": [
+   {
+    "Name": "English(US)",
+    "Id": "684519430",
+    "GUID": "{B57C9206-4B3D-47B9-B1C3-56C3C80C0F07}",
+    "Default": "true",
+    "UseAsStandIn": "true"
+   }
+  ],
+  "FileHash": "{9BD5E25D-C2CA-BB74-4D60-CC00D3E20C25}"
+ }
+}

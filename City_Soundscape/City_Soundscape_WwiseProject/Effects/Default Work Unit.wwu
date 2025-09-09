@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{43B8CBB6-8B5D-45A1-85CF-42A2DC5D3553}" SchemaVersion="123">
+	<Effects>
+		<WorkUnit Name="Default Work Unit" ID="{43B8CBB6-8B5D-45A1-85CF-42A2DC5D3553}" PersistMode="Standalone">
+			<ChildrenList>
+				<Effect Name="New_RoomVerb" ID="{20CE0D84-42EB-4587-BF27-D8E8EB183323}" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3"/>
+			</ChildrenList>
+		</WorkUnit>
+	</Effects>
+</WwiseDocument>

@@ -1,0 +1,313 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "1669708157",
+    "Type": "Event",
+    "GUID": "{8D7F5D68-F147-470F-9293-29A35F58FFE4}",
+    "Language": "SFX",
+    "Hash": "{C48A0C2B-F9FD-C6A3-3FE4-4BD5EE1943E3}",
+    "ObjectPath": "CarStartEvent",
+    "ShortName": "CarStartEvent",
+    "Path": "Event/CarStartEvent.bnk",
+    "Media": [
+     {
+      "Id": "4172513",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Engine_Start.wav",
+      "Path": "Media/4172513.wem",
+      "CachePath": "F9/{F92AC39F-D455-F412-B300-37681EDB7971}.wem"
+     },
+     {
+      "Id": "79100417",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "GravelTyre2.wav",
+      "Path": "Media/79100417.wem",
+      "CachePath": "2E/{2EFF41F8-55EC-EEBC-422D-D051A66BBAA9}.wem"
+     },
+     {
+      "Id": "386557140",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Engine_Medium.wav",
+      "Path": "Media/386557140.wem",
+      "CachePath": "AC/{AC2104BC-8F32-3368-E872-B06ADAC9ECF7}.wem"
+     },
+     {
+      "Id": "489887613",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "TarmacTyre.wav",
+      "Path": "Media/489887613.wem",
+      "CachePath": "43/{434CBD0C-09C5-BD19-DFC4-4DC759AE0501}.wem"
+     },
+     {
+      "Id": "659041346",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Engine_Idle.wav",
+      "Path": "Media/659041346.wem",
+      "CachePath": "14/{14ACA754-6A58-871F-D21D-3C1DFDD816A6}.wem"
+     },
+     {
+      "Id": "745671645",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Engine_Start_2.wav",
+      "Path": "Media/745671645.wem",
+      "CachePath": "BF/{BF54A20C-AAF3-F43C-5CED-B257ED5E0CF6}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "1669708157",
+      "Name": "CarStartEvent",
+      "ObjectPath": "\\Events\\Default Work Unit\\CarStartEvent",
+      "GUID": "{8D7F5D68-F147-470F-9293-29A35F58FFE4}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "4172513"
+       },
+       {
+        "Id": "745671645"
+       }
+      ],
+      "SwitchContainers": [
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "2635776243",
+         "Id": "614582916",
+         "GUID": "{771E803F-0BE1-44E6-AC72-56F0E175DEFA}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "386557140"
+         },
+         {
+          "Id": "659041346"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "2635776243",
+         "Id": "3476314365",
+         "GUID": "{A5578E5C-41E1-4EDC-869C-84DE3BC1FA99}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "386557140"
+         },
+         {
+          "Id": "659041346"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "2635776243",
+         "Id": "998496889",
+         "GUID": "{0685A7B3-DE85-47CC-BED3-3CA56E11C574}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "386557140"
+         },
+         {
+          "Id": "659041346"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "2635776243",
+         "Id": "931160808",
+         "GUID": "{794978BB-B840-4A4C-9483-E261B8A35562}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "386557140"
+         },
+         {
+          "Id": "659041346"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "2635776243",
+         "Id": "670611050",
+         "GUID": "{74B11EC2-2402-4C8A-A3F9-938048A2C007}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "386557140"
+         },
+         {
+          "Id": "659041346"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "2635776243",
+         "Id": "4215888597",
+         "GUID": "{4C1B05FB-1283-48E7-A28B-D1F80419816F}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "386557140"
+         },
+         {
+          "Id": "659041346"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "3127003060",
+         "Id": "2185786256",
+         "GUID": "{5E3A0F30-9D9D-4BFB-BC89-CAD8B164896F}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "79100417"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "3127003060",
+         "Id": "3769881715",
+         "GUID": "{14AA17D1-EFC8-45DB-936E-066E6BA60C87}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "489887613"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "1045151033",
+      "Name": "Car_Gear",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Car_Gear",
+      "GUID": "{D8AAF1B6-26D5-4293-B814-FBCFCD512A10}"
+     },
+     {
+      "Id": "2918404151",
+      "Name": "Car_RPM",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Car_RPM",
+      "GUID": "{E8A5DAA3-887D-40FC-89AF-30315129E2ED}"
+     },
+     {
+      "Id": "3159817032",
+      "Name": "Distance_To_Sound",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Distance_To_Sound",
+      "GUID": "{6EE7AE7D-4E3E-4144-A62E-C482236486F7}"
+     },
+     {
+      "Id": "4164958897",
+      "Name": "Car_Speed",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Car_Speed",
+      "GUID": "{13CBBC31-7B77-426C-894D-8DDB59F5ECAF}"
+     }
+    ],
+    "SwitchGroups": [
+     {
+      "Id": "2635776243",
+      "Name": "Gear_Switch",
+      "ObjectPath": "\\Switches\\Default Work Unit\\Gear_Switch",
+      "GUID": "{04E34D36-D91D-4E43-A108-07A485E59232}",
+      "GameParameterRef": {
+       "Id": "1045151033"
+      },
+      "Switches": [
+       {
+        "Id": "614582916",
+        "Name": "Fifth",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Gear_Switch\\Fifth",
+        "GUID": "{771E803F-0BE1-44E6-AC72-56F0E175DEFA}"
+       },
+       {
+        "Id": "670611050",
+        "Name": "Neutral",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Gear_Switch\\Neutral",
+        "GUID": "{74B11EC2-2402-4C8A-A3F9-938048A2C007}"
+       },
+       {
+        "Id": "931160808",
+        "Name": "Third",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Gear_Switch\\Third",
+        "GUID": "{794978BB-B840-4A4C-9483-E261B8A35562}"
+       },
+       {
+        "Id": "998496889",
+        "Name": "First",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Gear_Switch\\First",
+        "GUID": "{0685A7B3-DE85-47CC-BED3-3CA56E11C574}"
+       },
+       {
+        "Id": "3476314365",
+        "Name": "Second",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Gear_Switch\\Second",
+        "GUID": "{A5578E5C-41E1-4EDC-869C-84DE3BC1FA99}"
+       },
+       {
+        "Id": "4215888597",
+        "Name": "Fourth",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Gear_Switch\\Fourth",
+        "GUID": "{4C1B05FB-1283-48E7-A28B-D1F80419816F}"
+       }
+      ]
+     },
+     {
+      "Id": "3127003060",
+      "Name": "TireMaterial",
+      "ObjectPath": "\\Switches\\Default Work Unit\\TireMaterial",
+      "GUID": "{A7A11B4E-4E38-4299-AC6C-DE7422CE421A}",
+      "Switches": [
+       {
+        "Id": "2185786256",
+        "Name": "Gravel",
+        "ObjectPath": "\\Switches\\Default Work Unit\\TireMaterial\\Gravel",
+        "GUID": "{5E3A0F30-9D9D-4BFB-BC89-CAD8B164896F}"
+       },
+       {
+        "Id": "3769881715",
+        "Name": "Tarmac",
+        "ObjectPath": "\\Switches\\Default Work Unit\\TireMaterial\\Tarmac",
+        "GUID": "{14AA17D1-EFC8-45DB-936E-066E6BA60C87}"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{EF89616E-5EEE-E81E-F2E4-651C88A285BC}"
+ }
+}

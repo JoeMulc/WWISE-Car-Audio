@@ -1,0 +1,47 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "2105214718",
+    "Type": "Event",
+    "GUID": "{075A1A58-E99A-452E-95EF-67D66E2327D7}",
+    "Language": "SFX",
+    "Hash": "{3A6BCFF0-1A95-9AA0-3F5C-5B6D796D1A39}",
+    "ObjectPath": "ConstructionStartEvent",
+    "ShortName": "ConstructionStartEvent",
+    "Path": "Event/ConstructionStartEvent.bnk",
+    "Media": [
+     {
+      "Id": "511193557",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Construction_Site_Ambience.wav",
+      "Path": "Media/511193557.wem",
+      "CachePath": "F9/{F96A9443-5594-2488-CFF3-3D93780A29D7}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2105214718",
+      "Name": "ConstructionStartEvent",
+      "ObjectPath": "\\Events\\Default Work Unit\\ConstructionStartEvent",
+      "GUID": "{075A1A58-E99A-452E-95EF-67D66E2327D7}",
+      "MaxAttenuation": "5000",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "511193557"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{DAD734E6-9577-ED14-31F3-A1C4D27C2184}"
+ }
+}

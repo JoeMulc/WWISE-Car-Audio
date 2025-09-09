@@ -1,0 +1,6 @@
+Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	817005157	Garage_Reverb			\Default Work Unit\Master Audio Bus\Garage_Reverb	
+
+Effect plug-ins	ID	Name	Type				Notes
+	2995775460	Room_Small	Wwise RoomVerb			
+
